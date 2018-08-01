@@ -1,0 +1,744 @@
+// Blobal values
+h2{
+  font-size: 25px;
+}
+
+.btn-primary{
+  background-color: $main-color;
+  border-color: $main-color;
+}
+
+.btn-primary:hover{
+  background-color: $main-color-hover;
+  border-color: $main-color-hover;
+}
+
+
+
+body{
+  //padding-top: 50px;
+  height: 100%;
+
+  .navigation{
+    height: 50px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    #logo{
+      text-align: left;
+
+      img{
+        cursor: pointer;
+      }
+
+    }
+
+    #title{
+      text-align: center;
+
+      h1{
+        font-size: 25px;
+        color: $main-color;
+      }
+    }
+
+    .social{
+      text-align: right;
+      padding-top: 10px;
+
+      ul{
+        padding-left: 0px;
+        margin-bottom: 0px;
+        //margin-right: auto;
+        text-align: right;
+
+        li{
+          display: inline;
+          padding-left: 15px;
+          font-size: 20px;
+
+          a{
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content{
+    .carousel-caption{
+      span{
+        background-color: $main-color;
+      }
+
+      h1{
+        @media(min-width: 921px) and (max-width: 1000px){
+          font-size: 30px;
+        }
+
+        @media(min-width: 607px) and (max-width: 920px){
+          font-size: 25px;
+        }
+
+        @media(min-width: 498px) and (max-width: 606px){
+          font-size: 20px;
+        }
+
+        @media(min-width: 388px) and (max-width: 497px){
+          font-size: 15px;
+        }
+
+        @media(max-width: 387px){
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .btn-file-form{
+    cursor: pointer;
+    #display-file-form{
+      text-align: center;
+      position: relative;
+
+      .text{
+        margin-top: 25px;
+        font-weight: bold;
+        color: $main-color;
+      }
+
+      .text:hover{
+        color: $main-color-hover;
+      }
+
+      .drop-down-imaqge{
+        cursor: pointer;
+        position: absolute;
+        background: url(../img/drop-down.png) no-repeat;
+        width: 8%;
+        height: 50px;
+        left: 46%;
+      }
+
+      .drop-down-imaqge:hover{
+        background: url(../img/drop-down2.png) no-repeat;
+      }
+    }
+  }
+
+  .formulaire{
+    .form-group{
+      input{
+        margin-bottom: 20px;
+      }
+
+      hr{
+        margin-top: 0px;
+      }
+
+      #prenom, #tel, #niveau{
+        padding-right: 5px;
+      }
+
+      #nom, #pays, #formation{
+        padding-left: 5px;
+      }
+
+      #nationalite, #adresse{
+        padding-left: 10px;
+      }
+
+      #age, #code-postal{
+        input{
+          width: 50%;
+        }
+      }
+
+      #niveau{
+        padding-right: 2px;
+      }
+
+      .form-check{
+        label{
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  .inscription, .logement{
+    .row{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    img{
+      width: 100%;
+    }
+
+    #left-block{
+      padding-left: 0px;
+      padding-right: 0px;
+
+      #top{
+        position: relative;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 1px;
+
+        @media(min-width: 498px) and (max-width: 606px){
+          font-size: 20px;
+        }
+
+        @media(min-width: 388px) and (max-width: 497px){
+          font-size: 15px;
+        }
+
+        @media(max-width: 387px){
+          font-size: 12px;
+        }
+
+        .text{
+          position: absolute;
+          bottom: 5%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          padding-left: 4px;
+          padding-right: 4px;
+          background-color: $main-color;
+          cursor: default;
+        }
+      }
+
+      #bottom1, #bottom2{
+        padding: 5px 5px 0 5px;
+      }
+    }
+
+    #right-block{
+      padding-right: 5px;
+      padding-left: 5px;
+      position: relative;
+
+      @media(max-width: 991px){
+        padding-top: 10px;
+      }
+
+      .text{
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        background-color: $main-color;
+
+        @media(min-width: 498px) and (max-width: 606px){
+          font-size: 20px;
+        }
+
+        @media(min-width: 388px) and (max-width: 497px){
+          font-size: 15px;
+        }
+
+        @media(max-width: 387px){
+          font-size: 12px;
+        }
+      }
+
+      .logo{
+        position: absolute;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    }
+
+    #right-block:hover .text{
+      opacity: 1;
+    }
+
+    #right-block:hover .image{
+      opacity: 0.3;
+    }
+
+    #right-block:hover .logo{
+      opacity: 0;
+    }
+  }
+
+  #buttons{
+    margin-top: 15px;
+
+    .text{
+      cursor: pointer;
+      margin: auto;
+      font-weight: bold;
+      color: $main-color;
+    }
+
+    .text:hover{
+      color: $main-color-hover;
+    }
+
+    .image{
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      margin: auto;
+    }
+
+    #logement{
+      text-align: center;
+
+      .image{
+        background: url(../img/icon-house1.png) no-repeat;
+      }
+
+      .image:hover{
+        background: url(../img/icon-house2.png) no-repeat;
+      }
+    }
+
+    #inscription{
+      text-align: center;
+
+      .image{
+        background: url(../img/icon-inscription1.png) no-repeat;
+      }
+
+      .image:hover{
+        background: url(../img/icon-inscription2.png) no-repeat;
+      }
+    }
+
+    #dossier{
+      text-align: center;
+
+      .image{
+        background: url(../img/icon-folder1.png) no-repeat;
+      }
+
+      .image:hover{
+        background: url(../img/icon-folder2.png) no-repeat;
+      }
+    }
+  }
+}
+//----------------------------------------------------------------------------
+.bg-light{
+  background: $main-color;
+}
+
+.navbar{
+  margin-bottom: 0px;
+
+  button{
+    @media(min-width: 768px){
+      display: none;
+    }
+  }
+
+  .navbar-right{
+    @media(max-width: 891px){
+      display: none;
+    }
+  }
+
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+  li{
+    padding: 25px 15px;
+  }
+}
+
+.showcase{
+  background: url(../img/showcase.jpg) no-repeat;
+  height: 550px;
+
+  h1{
+    color: #fff;
+    font-size: 46px;
+  }
+
+  p{
+    color: #fff;
+  }
+}
+
+.section-h{
+  padding: 5px 0;
+  background: $main-color;
+  color: set-text-color($main-color);
+
+  h1{
+    font-size: 28px;
+  }
+
+  .container{
+    cursor: default;
+  }
+}
+
+.section-a{
+  padding: 30px 0;
+  text-align: center;
+  background: $main-color;
+  color: set-text-color($main-color);
+
+  .fa{
+    font-size: 25px;
+  }
+}
+
+.section-b{
+  padding: 30px 0;
+  background: #fff;
+
+  img{
+    width: 100%;
+  }
+
+}
+
+.main{
+  padding: 30px 0;
+  background: #fff;
+
+  .panel-default{
+    margin-bottom: 30px;
+  }
+
+}
+
+//** Block panel-header
+//
+//##
+.page-head{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+
+  .description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+
+      h1{
+        padding-left: 23px;
+        padding-right: 23px;
+
+        @media(max-width: 500px){
+          font-size: 20px;
+        }
+      }
+
+      p{
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 23px;
+
+        @media(max-width: 500px){
+          display: none;
+        }
+      }
+
+  }
+}
+
+//** Google map
+//
+//##
+#map{
+  width: 100%;
+  height: 594px;
+}
+
+.img-fluid{
+  max-width: 100%;
+}
+//** Block Réalisation
+//
+//##
+.section-realisations{
+  padding: 30px 0;
+  text-align: center;
+  background: $main-color;
+  color: set-text-color($main-color);
+
+  .btn-primary{
+    background: $main-color;
+    border-color: #fff;
+    margin-top: 20px;
+  }
+
+  .btn-primary:hover{
+    background: lighten($main-color, 15%);
+    border-color: lighten($main-color, 15%);
+  }
+
+  .btn-primary:focus{
+    background: lighten($main-color, 15%);
+    border-color: lighten($main-color, 15%);
+  }
+
+  .btn-primary:active{
+    background: lighten($main-color, 15%);
+    border-color: lighten($main-color, 15%);
+  }
+}
+
+// Services
+//
+
+#top-services{
+  text-align: center;
+  padding: 30px 0;
+}
+
+.section-services{
+
+  .service-heading{
+    height: 100px;
+  }
+
+  .block{
+    position: relative;
+    margin-bottom: 30px;
+
+    .image{
+      opacity: 1;
+      transition: .5s ease;
+    }
+
+    .middle {
+      transition: .5s ease;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+
+      .text {
+        color: #fff;
+        font-size: 36px;
+        padding: 16px 32px;
+      }
+    }
+
+    .middleTwo {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+
+      .text {
+        color: $main-color;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+    }
+  }
+
+  .block:hover{
+    .image{
+      opacity: 0.3;
+    }
+
+    .middle{
+      opacity: 0;
+    }
+
+    .middleTwo{
+      opacity: 1;
+    }
+  }
+}
+
+
+.section-c{
+  padding: 30px 0;
+  text-align: center;
+  background: $main-color;
+  color: set-text-color($main-color);
+}
+
+.panel-heading h4{
+  color: set-text-color($main-color);
+}
+
+.list-group-item.active{
+  color: set-text-color($main-color);
+}
+
+.section-d{
+  padding: 30px 0;
+  background: darken($main-color, 15%);
+  color: set-text-color($main-color);
+}
+
+.section-content{
+  padding: 30px 0;
+  background-color: #fff;
+
+  .block{
+    position: relative;
+    margin-bottom: 30px;
+
+    .image{
+      opacity: 1;
+      transition: .5s ease;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+
+      .text {
+        color: $main-color;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+    }
+  }
+
+  .block:hover{
+    .image{
+      opacity: 0.3;
+    }
+
+    .middle{
+      opacity: 1;
+    }
+  }
+}
+
+// Email form
+//
+.contact-mail{
+  padding: 30px 0;
+  background: #fff;
+  text-align: center;
+
+  input{
+    margin-bottom: 30px;
+  }
+
+  button{
+    background: $main-color;
+    border-color: $main-color;
+  }
+
+  button:hover{
+    background: lighten($main-color, 15%);
+    border-color: lighten($main-color, 15%);
+  }
+
+  button:focus{
+    background: lighten($main-color, 15%);
+    border-color: lighten($main-color, 15%);
+  }
+
+  button:active{
+    background: lighten($main-color, 15%);
+    border-color: lighten($main-color, 15%);
+  }
+}
+
+textarea{
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.form-row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+
+  #prenom, #tel{
+    padding-right: 2px;
+
+  }
+
+  #nom, #societe{
+    padding-left: 2px;
+  }
+
+  .col{
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+  }
+}
+
+// Social media in footer
+//
+.footer-social{
+  padding: 30px 0;
+  background: $main-color;
+
+  ul{
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    li{
+      display: inline;
+      padding: 30px 15px;
+      font-size: 25px;
+
+      a{
+        color: set-text-color($main-color);
+      }
+    }
+  }
+}
+
+footer{
+  padding: 5px 0;
+  text-align: center;
+  background: darken($main-color, 15%);
+  color: grey;
+}
+
+// Remove bullets from list
+ul{
+  list-style-type: none;
+}

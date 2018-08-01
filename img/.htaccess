@@ -1,0 +1,5 @@
+#
+# restrictions to access the files in the dir
+#
+
+Options -Indexes
