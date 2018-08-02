@@ -1,0 +1,5 @@
+#
+# restrictions to access the files in css dir
+#
+
+Options -Indexes

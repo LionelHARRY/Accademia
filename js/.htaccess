@@ -1,0 +1,5 @@
+#
+# restrictions to access the files in js dir
+#
+
+Options -Indexes
