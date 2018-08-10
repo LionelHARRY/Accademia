@@ -32,8 +32,46 @@
 //});
 
 //Ignore parent Div
-$("#buttons", ".row").click(function(){
+$(
+  "#buttons",
+  ".row",
+  ".navigation",
+  "#nav-row",
+  "#logo",
+  ".image",
+  ".main-content",
+  ".slide",
+  ".carousel-inner",
+  ".carousel-indicators"
+).click(function(){
   event.stopPropagation();
+});
+
+
+
+$('div.item').click(function(){
+  var current = $(this).attr("id");
+
+  if(current == "item1"){
+    $(".main-content").hide();
+    $(".formulaire").hide();
+    $(".inscription").hide();
+    $(".logement").hide();
+    $(".info").show();
+  }else if(current == "item2"){
+    $(".main-content").hide();
+    $(".formulaire").hide();
+    $(".inscription").hide();
+    $(".info").hide();
+    $(".logement").show();
+  }
+  else if(current == "item3"){
+    $(".main-content").hide();
+    $(".formulaire").hide();
+    $(".logement").hide();
+    $(".info").hide();
+    $(".inscription").show();
+  }
 });
 
 //Dossier element clicked

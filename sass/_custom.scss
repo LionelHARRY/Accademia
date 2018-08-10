@@ -24,12 +24,15 @@ body{
     width: 100%;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 
     #logo{
       text-align: left;
 
       img{
         cursor: pointer;
+        width: 50px;
       }
 
     }
@@ -67,6 +70,7 @@ body{
   }
 
   .main-content{
+    cursor: pointer;
     .carousel-caption{
       span{
         cursor: default;
