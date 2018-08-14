@@ -16,8 +16,8 @@ h2{
 
 
 body{
-  //padding-top: 50px;
-  height: 100%;
+  position: relative;
+  height: 100vh;
 
   .navigation{
     height: 50px;
@@ -172,6 +172,11 @@ body{
     }
   }
 
+  .info{
+    width: 100%;
+    height: calc(100% - 128px); //128 is from 50px(nav height) + 78px(buttons height)
+  }
+
   .inscription, .logement{
     .row{
       margin-left: 0px;
@@ -279,13 +284,13 @@ body{
   }
 
   #buttons{
-    margin-top: 15px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 
-    .text{
-      cursor: pointer;
-      margin: auto;
-      font-weight: bold;
-      color: $main-color;
+    #buttons-col{
+      padding-top: 4px;
+      padding-bottom: 4px;
     }
 
     .text:hover{
@@ -332,6 +337,18 @@ body{
 
       .image:hover{
         background: url(../img/icon-folder2.png) no-repeat;
+      }
+    }
+
+    #info{
+      text-align: center;
+
+      .image{
+        background: url(../img/icon-help1.png) no-repeat;
+      }
+
+      .image:hover{
+        background: url(../img/icon-help2.png) no-repeat;
       }
     }
   }

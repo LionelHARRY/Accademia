@@ -48,7 +48,7 @@ $(
 });
 
 
-
+//hide and show elements from clicks on slideshow
 $('div.item').click(function(){
   var current = $(this).attr("id");
 
@@ -80,10 +80,11 @@ $("#dossier").click(function(){
     $(".main-content").hide();
     $(".inscription").hide();
     $(".logement").hide();
+    $(".info").hide();
     $(".formulaire").show();
 
     //Rename the title
-    document.getElementsById("title").innerHTML = "Accademia | Formulaire";
+    document.getElementById("title").innerHTML = "Accademia | Formulaire";
   }
 });
 
@@ -93,10 +94,11 @@ $("#inscription").click(function(){
     $(".main-content").hide();
     $(".formulaire").hide();
     $(".logement").hide();
+    $(".info").hide();
     $(".inscription").show();
 
     //Rename the title
-    document.getElementsById("title").innerHTML = "Accademia | Inscription";
+    document.getElementById("title").innerHTML = "Accademia | Inscription";
   }
 });
 
@@ -106,10 +108,25 @@ $("#logement").click(function(){
     $(".main-content").hide();
     $(".formulaire").hide();
     $(".inscription").hide();
+    $(".info").hide();
     $(".logement").show();
 
     //Rename the title
-    document.getElementsById("title").innerHTML = "Accademia | Logement";
+    document.getElementById("title").innerHTML = "Accademia | Logement";
+  }
+});
+
+//Info element clicked
+$("#info").click(function(){
+  if($(".info").css('display') == 'none'){
+    $(".main-content").hide();
+    $(".formulaire").hide();
+    $(".inscription").hide();
+    $(".logement").hide();
+    $(".info").show();
+
+    //Rename the title
+    document.getElementById("title").innerHTML = "Accademia | info";
   }
 });
 
