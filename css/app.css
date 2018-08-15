@@ -8222,8 +8222,25 @@ body {
   body .formulaire .form-group .form-check label {
     color: #7f8c8d; }
   body .info {
+    position: relative;
     width: 100%;
     height: calc(100% - 128px); }
+    body .info img {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.1; }
+    body .info #info-col .text {
+      margin-top: 20%;
+      font-size: 20px;
+      text-align: justify; }
+      @media (min-width: 388px) and (max-width: 497px) {
+        body .info #info-col .text {
+          font-size: 15px; } }
+      @media (max-width: 387px) {
+        body .info #info-col .text {
+          font-size: 12px; } }
   body .inscription .row, body .logement .row {
     margin-left: 0px;
     margin-right: 0px; }
