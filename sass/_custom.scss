@@ -173,8 +173,34 @@ body{
   }
 
   .info{
+    position: relative;
     width: 100%;
     height: calc(100% - 128px); //128 is from 50px(nav height) + 78px(buttons height)
+
+    img{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+    }
+
+    #info-col{
+      .text{
+        margin-top: 20%;
+        font-size: 20px;
+        text-align: justify;
+
+        @media(min-width: 388px) and (max-width: 497px){
+          font-size: 15px;
+        }
+
+        @media(max-width: 387px){
+          font-size: 12px;
+        }
+      }
+    }
+
   }
 
   .inscription, .logement{
