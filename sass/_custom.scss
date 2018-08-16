@@ -22,8 +22,8 @@ body{
   .navigation{
     height: 50px;
     width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 4px;
     padding-bottom: 4px;
 
@@ -74,7 +74,7 @@ body{
     .carousel-caption{
       span{
         cursor: default;
-        background-color: $main-color;
+        background-color: rgba(0, 0, 0, 0.38);
       }
 
       h1{
@@ -95,7 +95,7 @@ body{
         }
 
         @media(max-width: 387px){
-          font-size: 12px;
+          display: none;
         }
       }
     }
@@ -212,6 +212,26 @@ body{
       width: 100%;
     }
 
+    .text{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.38);
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media(min-width: 388px) and (max-width: 497px){
+        font-size: 15px;
+      }
+
+      @media(max-width: 387px){
+        font-size: 12px;
+      }
+    }
+
     #left-block{
       padding-left: 0px;
       padding-right: 0px;
@@ -225,26 +245,13 @@ body{
         letter-spacing: 1px;
 
         .text{
-          position: absolute;
           bottom: 5%;
-          left: 50%;
           max-height: 50%;
-          transform: translate(-50%, -50%);
           text-align: center;
-          font-size: 20px;
           padding-left: 4px;
           padding-right: 4px;
-          background-color: $main-color;
           cursor: default;
 
-
-          @media(min-width: 388px) and (max-width: 497px){
-            font-size: 15px;
-          }
-
-          @media(max-width: 387px){
-            font-size: 12px;
-          }
         }
       }
 
@@ -263,26 +270,11 @@ body{
       }
 
       .text{
-        position: absolute;
         opacity: 0;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
         max-height: 80%;
-        text-align: center;
-        font-size: 20px;
-        color: #fff;
-        background-color: $main-color;
+        text-align: justify;
 
-
-        @media(min-width: 388px) and (max-width: 497px){
-          font-size: 15px;
-        }
-
-        @media(max-width: 387px){
-          font-size: 12px;
-        }
       }
 
       .logo{
@@ -301,7 +293,8 @@ body{
     }
 
     #right-block:hover .image{
-      opacity: 0.3;
+      opacity: 0.4;
+      z-index: -1;
     }
 
     #right-block:hover .logo{
