@@ -3,11 +3,15 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
+//Body height excluding Nav and Button elements
+//128 is from 50px(nav height) + 78px(buttons height)
+$content-height: calc(100vh - 128px);
 
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
-//1a8c97
+
+
 // My Variables
 $main-color:                       #7f8c8d;
 $main-color-hover:                 #95a5a6;

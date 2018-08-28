@@ -8178,6 +8178,9 @@ body {
             color: #7f8c8d; }
   body .main-content {
     cursor: pointer; }
+    body .main-content .carousel-inner .item img {
+      max-width: none;
+      height: calc(100vh - 128px); }
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }
@@ -8235,7 +8238,7 @@ body {
   body .info {
     position: relative;
     width: 100%;
-    height: calc(100% - 128px); }
+    height: calc(100vh - 128px); }
     body .info img {
       position: absolute;
       top: 40%;
