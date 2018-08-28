@@ -81,89 +81,45 @@
       </div><!-- End slideshow -->
 
     </div>
-
     <!-- Content 2 -->
-    <div class="formulaire" style="display:none;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <form>
-              <div class="form-group">
-                <div class="form-row">
-                  <div class="col" id="prenom">
-                    <input type="text" class="form-control" placeholder="Prénom" required="True">
-                  </div>
-
-                  <div class="col" id="nom">
-                    <input type="text" class="form-control" placeholder="Nom" required="True">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="col" id="age">
-                    <input type="number" class="form-control" placeholder="Age" required="True">
-                  </div>
-
-                  <div class="col" id="nationalite">
-                    <input type="text" class="form-control" placeholder="Nationalité" required="True">
-                  </div>
-                </div>
-                <hr>
-
-                <div class="form-row">
-                  <div class="col" id="tel">
-                    <input type="tel" class="form-control" placeholder="Téléphone">
-                  </div>
-
-                  <div class="col" id="pays">
-                    <input type="text" class="form-control" placeholder="Pays">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <div class="col" id="code-postal">
-                    <input type="number" class="form-control" placeholder="Code Postal">
-                  </div>
-
-                  <div class="col" id="adresse">
-                    <input type="text" class="form-control" placeholder="Adresse">
-                  </div>
-                </div>
-                <hr>
-
-                <div class="form-row">
-                  <div class="col" id="niveau">
-                    <input type="text" class="form-control" placeholder="Niveau d'études">
-                  </div>
-
-                  <div class="col" id="formation">
-                    <input type="text" class="form-control" placeholder="Formation">
-                  </div>
-                </div>
-
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    cupiditate
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    praesentium
-                  </label>
-                </div>
-
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message"></textarea>
-                <button type="button" class="btn btn-primary">Send</button>
+    <div class="logement" style="display:none;">
+      <div class="row">
+        <div id="left-block" class="col-md-6">
+          <div class="row">
+            <div id="top" class="col-xs-12">
+              <img src="img/appart-top.jpg" alt="...">
+              <div class="text">
+                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
               </div>
-            </form>
+            </div>
+
+            <div id="bottom1" class="col-xs-6">
+              <img src="img/appart-bottom1.jpg" alt="...">
+            </div>
+
+            <div id="bottom2" class="col-xs-6">
+              <img src="img/appart-bottom2.jpg" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div id="right-block" class="col-md-6">
+          <img class="image" src="img/appart-left.jpg" alt="...">
+
+          <div class="text">
+            Accademia enean vulputate eleifend tellus. Aenean leo ligula,
+            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
+            ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+             Etiam ultricies nisi vel augue.
+          </div>
+
+          <div class="logo">
+            <img src="img/logo-big.png" alt="...">
           </div>
         </div>
       </div>
-    </div><!-- End mail form -->
-
+    </div>
     <!-- Content 3 -->
     <div class="inscription" style="display:none;">
       <div class="row">
@@ -203,47 +159,77 @@
         </div>
       </div>
     </div>
-
     <!-- Content 4 -->
-    <div class="logement" style="display:none;">
-      <div class="row">
-        <div id="left-block" class="col-md-6">
-          <div class="row">
-            <div id="top" class="col-xs-12">
-              <img src="img/appart-top.jpg" alt="...">
-              <div class="text">
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+    <div class="formulaire" style="display:none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <form>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col" id="prenom">
+                    <input type="text" class="form-control" placeholder="Prénom" required="True">
+                  </div>
+
+                  <div class="col" id="nom">
+                    <input type="text" class="form-control" placeholder="Nom" required="True">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col" id="age">
+                    <input type="number" class="form-control" placeholder="Age" required="True">
+                  </div>
+
+                  <div class="col" id="nationalite">
+                    <input type="text" class="form-control" placeholder="Nationalité" required="True">
+                  </div>
+                </div>
+                <hr>
+
+                <div class="form-row">
+                  <div class="col" id="tel">
+                    <input type="tel" class="form-control" placeholder="Téléphone">
+                  </div>
+
+                  <div class="col" id="mail">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <hr>
+
+                <div class="form-row">
+                  <div class="col" id="niveau">
+                    <input type="text" class="form-control" placeholder="Niveau d'études">
+                  </div>
+
+                  <div class="col" id="formation">
+                    <input type="text" class="form-control" placeholder="Formation">
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    cupiditate
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    praesentium
+                  </label>
+                </div>
+
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message"></textarea>
+                <button type="button" class="btn btn-primary">Send</button>
               </div>
-            </div>
-
-            <div id="bottom1" class="col-xs-6">
-              <img src="img/appart-bottom1.jpg" alt="...">
-            </div>
-
-            <div id="bottom2" class="col-xs-6">
-              <img src="img/appart-bottom2.jpg" alt="...">
-            </div>
-          </div>
-        </div>
-
-        <div id="right-block" class="col-md-6">
-          <img class="image" src="img/appart-left.jpg" alt="...">
-
-          <div class="text">
-            Accademia enean vulputate eleifend tellus. Aenean leo ligula,
-            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
-            ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-             Etiam ultricies nisi vel augue.
-          </div>
-
-          <div class="logo">
-            <img src="img/logo-big.png" alt="...">
+            </form>
           </div>
         </div>
       </div>
-    </div>
-
+    </div><!-- End mail form -->
     <!-- content 5 -->
     <div class="info" style="display:none;">
       <img src="img/logo-big2.png" alt="...">

@@ -159,40 +159,47 @@ body{
   }
 
   .formulaire{
-    .form-group{
-      input{
-        margin-bottom: 20px;
-      }
+    height: $content-height;
+    position: relative;
 
-      hr{
-        margin-top: 0px;
-      }
-
-      #prenom, #tel, #niveau{
-        padding-right: 5px;
-      }
-
-      #nom, #pays, #formation{
-        padding-left: 5px;
-      }
-
-      #nationalite, #adresse{
-        padding-left: 10px;
-      }
-
-      #age, #code-postal{
+    .container{
+      height: 100%;
+      
+      .form-group{
         input{
-          width: 50%;
+          margin-bottom: 20px;
         }
-      }
 
-      #niveau{
-        padding-right: 2px;
-      }
+        hr{
+          margin-top: 0px;
+        }
 
-      .form-check{
-        label{
-          color: $main-color;
+        #prenom, #tel, #niveau{
+          padding-right: 5px;
+        }
+
+        #nom, #pays, #formation{
+          padding-left: 5px;
+        }
+
+        #nationalite, #adresse{
+          padding-left: 10px;
+        }
+
+        #age, #code-postal{
+          input{
+            width: 50%;
+          }
+        }
+
+        #niveau{
+          padding-right: 2px;
+        }
+
+        .form-check{
+          label{
+            color: $main-color;
+          }
         }
       }
     }

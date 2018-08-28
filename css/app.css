@@ -8219,22 +8219,27 @@ body {
         left: 46%; }
       body .btn-file-form #display-file-form .drop-down-imaqge:hover {
         background: url(../img/drop-down2.png) no-repeat; }
-  body .formulaire .form-group input {
-    margin-bottom: 20px; }
-  body .formulaire .form-group hr {
-    margin-top: 0px; }
-  body .formulaire .form-group #prenom, body .formulaire .form-group #tel, body .formulaire .form-group #niveau {
-    padding-right: 5px; }
-  body .formulaire .form-group #nom, body .formulaire .form-group #pays, body .formulaire .form-group #formation {
-    padding-left: 5px; }
-  body .formulaire .form-group #nationalite, body .formulaire .form-group #adresse {
-    padding-left: 10px; }
-  body .formulaire .form-group #age input, body .formulaire .form-group #code-postal input {
-    width: 50%; }
-  body .formulaire .form-group #niveau {
-    padding-right: 2px; }
-  body .formulaire .form-group .form-check label {
-    color: #7f8c8d; }
+  body .formulaire {
+    height: calc(100vh - 128px);
+    position: relative; }
+    body .formulaire .container {
+      height: 100%; }
+      body .formulaire .container .form-group input {
+        margin-bottom: 20px; }
+      body .formulaire .container .form-group hr {
+        margin-top: 0px; }
+      body .formulaire .container .form-group #prenom, body .formulaire .container .form-group #tel, body .formulaire .container .form-group #niveau {
+        padding-right: 5px; }
+      body .formulaire .container .form-group #nom, body .formulaire .container .form-group #pays, body .formulaire .container .form-group #formation {
+        padding-left: 5px; }
+      body .formulaire .container .form-group #nationalite, body .formulaire .container .form-group #adresse {
+        padding-left: 10px; }
+      body .formulaire .container .form-group #age input, body .formulaire .container .form-group #code-postal input {
+        width: 50%; }
+      body .formulaire .container .form-group #niveau {
+        padding-right: 2px; }
+      body .formulaire .container .form-group .form-check label {
+        color: #7f8c8d; }
   body .info {
     position: relative;
     width: 100%;
