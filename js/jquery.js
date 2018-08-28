@@ -39,6 +39,7 @@ $(
   "#nav-row",
   "#logo",
   ".image",
+  ".name",
   ".main-content",
   ".slide",
   ".carousel-inner",

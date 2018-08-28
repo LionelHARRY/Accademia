@@ -30,9 +30,26 @@ body{
     #logo{
       text-align: left;
 
-      img{
+      .image{
+        display: inline-block;
+        img{
+          cursor: pointer;
+          width: 50px;
+        }
+      }
+
+      .name{
+        display: inline-block;
         cursor: pointer;
-        width: 50px;
+
+        @media(max-width: 400px){
+          display: none;
+        }
+
+        .text{
+          color: $main-color;
+          font-weight: bold;
+        }
       }
 
     }

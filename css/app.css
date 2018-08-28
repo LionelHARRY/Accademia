@@ -8144,9 +8144,20 @@ body {
     padding-bottom: 4px; }
     body .navigation #logo {
       text-align: left; }
-      body .navigation #logo img {
-        cursor: pointer;
-        width: 50px; }
+      body .navigation #logo .image {
+        display: inline-block; }
+        body .navigation #logo .image img {
+          cursor: pointer;
+          width: 50px; }
+      body .navigation #logo .name {
+        display: inline-block;
+        cursor: pointer; }
+        @media (max-width: 400px) {
+          body .navigation #logo .name {
+            display: none; } }
+        body .navigation #logo .name .text {
+          color: #7f8c8d;
+          font-weight: bold; }
     body .navigation #title {
       text-align: center; }
       body .navigation #title h1 {
