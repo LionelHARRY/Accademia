@@ -8180,7 +8180,8 @@ body {
     cursor: pointer; }
     body .main-content .carousel-inner .item img {
       max-width: none;
-      height: calc(100vh - 128px); }
+      height: calc(100vh - 128px);
+      margin: auto; }
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }
@@ -8330,7 +8331,7 @@ body {
   body .inscription #right-block:hover .logo, body .logement #right-block:hover .logo {
     opacity: 0; }
   body #buttons {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0; }
     body #buttons #buttons-col {

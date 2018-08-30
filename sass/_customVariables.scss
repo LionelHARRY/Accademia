@@ -11,12 +11,10 @@ $nav-height: 50px;
 //The buttons element height is defined according to the height of its content
 $foot-height: 78px;
 
-//Navbar plus foot height
-$nav-plus-foot: calc($nav-height + $foot-height);
 
 //Body height excluding Nav and Button elements
 //128 is from 50px(nav height) + 78px(buttons height)
-$content-height: calc(100vh - $nav-plus-foot);
+$content-height: calc(100vh - 128px);
 
 //== Colors
 //
