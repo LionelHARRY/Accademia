@@ -8178,10 +8178,12 @@ body {
             color: #7f8c8d; }
   body .main-content {
     cursor: pointer; }
-    body .main-content .carousel-inner .item img {
-      max-width: none;
-      height: calc(100vh - 128px);
-      margin: auto; }
+    body .main-content .carousel-inner {
+      background-color: #7f8c8d; }
+      body .main-content .carousel-inner .item img {
+        max-width: none;
+        height: calc(100vh - 128px);
+        margin: auto; }
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }

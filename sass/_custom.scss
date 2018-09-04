@@ -90,6 +90,8 @@ body{
     cursor: pointer;
 
     .carousel-inner{
+      background-color: $main-color;
+      
       .item{
         img{
           max-width: none;
