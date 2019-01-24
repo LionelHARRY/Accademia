@@ -20,19 +20,36 @@ body{
   height: 100vh;
 
   .navigation{
-    height: 50px;
+    height: $nav-height;
     width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 4px;
     padding-bottom: 4px;
 
     #logo{
       text-align: left;
 
-      img{
+      .image{
+        display: inline-block;
+        img{
+          cursor: pointer;
+          width: 50px;
+        }
+      }
+
+      .name{
+        display: inline-block;
         cursor: pointer;
-        width: 50px;
+
+        @media(max-width: 400px){
+          display: none;
+        }
+
+        .text{
+          color: $main-color;
+          font-weight: bold;
+        }
       }
 
     }
@@ -71,10 +88,22 @@ body{
 
   .main-content{
     cursor: pointer;
+
+    .carousel-inner{
+      background-color: $main-color;
+      
+      .item{
+        img{
+          max-width: none;
+          height: $content-height;
+          margin: auto;
+        }
+      }
+    }
     .carousel-caption{
       span{
         cursor: default;
-        background-color: $main-color;
+        background-color: rgba(0, 0, 0, 0.38);
       }
 
       h1{
@@ -95,7 +124,7 @@ body{
         }
 
         @media(max-width: 387px){
-          font-size: 12px;
+          display: none;
         }
       }
     }
@@ -133,40 +162,47 @@ body{
   }
 
   .formulaire{
-    .form-group{
-      input{
-        margin-bottom: 20px;
-      }
+    height: $content-height;
+    position: relative;
 
-      hr{
-        margin-top: 0px;
-      }
+    .container{
+      height: 100%;
 
-      #prenom, #tel, #niveau{
-        padding-right: 5px;
-      }
-
-      #nom, #pays, #formation{
-        padding-left: 5px;
-      }
-
-      #nationalite, #adresse{
-        padding-left: 10px;
-      }
-
-      #age, #code-postal{
+      .form-group{
         input{
-          width: 50%;
+          margin-bottom: 20px;
         }
-      }
 
-      #niveau{
-        padding-right: 2px;
-      }
+        hr{
+          margin-top: 0px;
+        }
 
-      .form-check{
-        label{
-          color: $main-color;
+        #prenom, #tel, #niveau{
+          padding-right: 5px;
+        }
+
+        #nom, #pays, #formation{
+          padding-left: 5px;
+        }
+
+        #nationalite, #adresse{
+          padding-left: 10px;
+        }
+
+        #age, #code-postal{
+          input{
+            width: 50%;
+          }
+        }
+
+        #niveau{
+          padding-right: 2px;
+        }
+
+        .form-check{
+          label{
+            color: $main-color;
+          }
         }
       }
     }
@@ -175,7 +211,7 @@ body{
   .info{
     position: relative;
     width: 100%;
-    height: calc(100% - 128px); //128 is from 50px(nav height) + 78px(buttons height)
+    height: $content-height;
 
     img{
       position: absolute;
@@ -190,6 +226,8 @@ body{
         margin-top: 20%;
         font-size: 20px;
         text-align: justify;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         @media(min-width: 388px) and (max-width: 497px){
           font-size: 15px;
@@ -212,6 +250,26 @@ body{
       width: 100%;
     }
 
+    .text{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.38);
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media(min-width: 388px) and (max-width: 497px){
+        font-size: 15px;
+      }
+
+      @media(max-width: 387px){
+        font-size: 12px;
+      }
+    }
+
     #left-block{
       padding-left: 0px;
       padding-right: 0px;
@@ -225,26 +283,13 @@ body{
         letter-spacing: 1px;
 
         .text{
-          position: absolute;
           bottom: 5%;
-          left: 50%;
           max-height: 50%;
-          transform: translate(-50%, -50%);
           text-align: center;
-          font-size: 20px;
           padding-left: 4px;
           padding-right: 4px;
-          background-color: $main-color;
           cursor: default;
 
-
-          @media(min-width: 388px) and (max-width: 497px){
-            font-size: 15px;
-          }
-
-          @media(max-width: 387px){
-            font-size: 12px;
-          }
         }
       }
 
@@ -263,26 +308,11 @@ body{
       }
 
       .text{
-        position: absolute;
         opacity: 0;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
         max-height: 80%;
-        text-align: center;
-        font-size: 20px;
-        color: #fff;
-        background-color: $main-color;
+        text-align: justify;
 
-
-        @media(min-width: 388px) and (max-width: 497px){
-          font-size: 15px;
-        }
-
-        @media(max-width: 387px){
-          font-size: 12px;
-        }
       }
 
       .logo{
@@ -301,7 +331,8 @@ body{
     }
 
     #right-block:hover .image{
-      opacity: 0.3;
+      opacity: 0.4;
+      z-index: -1;
     }
 
     #right-block:hover .logo{
@@ -310,7 +341,7 @@ body{
   }
 
   #buttons{
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
 

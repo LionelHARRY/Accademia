@@ -8138,15 +8138,26 @@ body {
   body .navigation {
     height: 50px;
     width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 4px;
     padding-bottom: 4px; }
     body .navigation #logo {
       text-align: left; }
-      body .navigation #logo img {
-        cursor: pointer;
-        width: 50px; }
+      body .navigation #logo .image {
+        display: inline-block; }
+        body .navigation #logo .image img {
+          cursor: pointer;
+          width: 50px; }
+      body .navigation #logo .name {
+        display: inline-block;
+        cursor: pointer; }
+        @media (max-width: 400px) {
+          body .navigation #logo .name {
+            display: none; } }
+        body .navigation #logo .name .text {
+          color: #7f8c8d;
+          font-weight: bold; }
     body .navigation #title {
       text-align: center; }
       body .navigation #title h1 {
@@ -8167,9 +8178,15 @@ body {
             color: #7f8c8d; }
   body .main-content {
     cursor: pointer; }
+    body .main-content .carousel-inner {
+      background-color: #7f8c8d; }
+      body .main-content .carousel-inner .item img {
+        max-width: none;
+        height: calc(100vh - 128px);
+        margin: auto; }
     body .main-content .carousel-caption span {
       cursor: default;
-      background-color: #7f8c8d; }
+      background-color: rgba(0, 0, 0, 0.38); }
     @media (min-width: 921px) and (max-width: 1000px) {
       body .main-content .carousel-caption h1 {
         font-size: 30px; } }
@@ -8184,7 +8201,7 @@ body {
         font-size: 15px; } }
     @media (max-width: 387px) {
       body .main-content .carousel-caption h1 {
-        font-size: 12px; } }
+        display: none; } }
   body .btn-file-form {
     cursor: pointer; }
     body .btn-file-form #display-file-form {
@@ -8205,26 +8222,31 @@ body {
         left: 46%; }
       body .btn-file-form #display-file-form .drop-down-imaqge:hover {
         background: url(../img/drop-down2.png) no-repeat; }
-  body .formulaire .form-group input {
-    margin-bottom: 20px; }
-  body .formulaire .form-group hr {
-    margin-top: 0px; }
-  body .formulaire .form-group #prenom, body .formulaire .form-group #tel, body .formulaire .form-group #niveau {
-    padding-right: 5px; }
-  body .formulaire .form-group #nom, body .formulaire .form-group #pays, body .formulaire .form-group #formation {
-    padding-left: 5px; }
-  body .formulaire .form-group #nationalite, body .formulaire .form-group #adresse {
-    padding-left: 10px; }
-  body .formulaire .form-group #age input, body .formulaire .form-group #code-postal input {
-    width: 50%; }
-  body .formulaire .form-group #niveau {
-    padding-right: 2px; }
-  body .formulaire .form-group .form-check label {
-    color: #7f8c8d; }
+  body .formulaire {
+    height: calc(100vh - 128px);
+    position: relative; }
+    body .formulaire .container {
+      height: 100%; }
+      body .formulaire .container .form-group input {
+        margin-bottom: 20px; }
+      body .formulaire .container .form-group hr {
+        margin-top: 0px; }
+      body .formulaire .container .form-group #prenom, body .formulaire .container .form-group #tel, body .formulaire .container .form-group #niveau {
+        padding-right: 5px; }
+      body .formulaire .container .form-group #nom, body .formulaire .container .form-group #pays, body .formulaire .container .form-group #formation {
+        padding-left: 5px; }
+      body .formulaire .container .form-group #nationalite, body .formulaire .container .form-group #adresse {
+        padding-left: 10px; }
+      body .formulaire .container .form-group #age input, body .formulaire .container .form-group #code-postal input {
+        width: 50%; }
+      body .formulaire .container .form-group #niveau {
+        padding-right: 2px; }
+      body .formulaire .container .form-group .form-check label {
+        color: #7f8c8d; }
   body .info {
     position: relative;
     width: 100%;
-    height: calc(100% - 128px); }
+    height: calc(100vh - 128px); }
     body .info img {
       position: absolute;
       top: 40%;
@@ -8234,7 +8256,9 @@ body {
     body .info #info-col .text {
       margin-top: 20%;
       font-size: 20px;
-      text-align: justify; }
+      text-align: justify;
+      overflow: hidden;
+      text-overflow: ellipsis; }
       @media (min-width: 388px) and (max-width: 497px) {
         body .info #info-col .text {
           font-size: 15px; } }
@@ -8246,6 +8270,22 @@ body {
     margin-right: 0px; }
   body .inscription img, body .logement img {
     width: 100%; }
+  body .inscription .text, body .logement .text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.38);
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    @media (min-width: 388px) and (max-width: 497px) {
+      body .inscription .text, body .logement .text {
+        font-size: 15px; } }
+    @media (max-width: 387px) {
+      body .inscription .text, body .logement .text {
+        font-size: 12px; } }
   body .inscription #left-block, body .logement #left-block {
     padding-left: 0px;
     padding-right: 0px; }
@@ -8257,23 +8297,12 @@ body {
       color: #fff;
       letter-spacing: 1px; }
       body .inscription #left-block #top .text, body .logement #left-block #top .text {
-        position: absolute;
         bottom: 5%;
-        left: 50%;
         max-height: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
-        font-size: 20px;
         padding-left: 4px;
         padding-right: 4px;
-        background-color: #7f8c8d;
         cursor: default; }
-        @media (min-width: 388px) and (max-width: 497px) {
-          body .inscription #left-block #top .text, body .logement #left-block #top .text {
-            font-size: 15px; } }
-        @media (max-width: 387px) {
-          body .inscription #left-block #top .text, body .logement #left-block #top .text {
-            font-size: 12px; } }
     body .inscription #left-block #bottom1, body .inscription #left-block #bottom2, body .logement #left-block #bottom1, body .logement #left-block #bottom2 {
       padding: 5px 5px 0 5px; }
   body .inscription #right-block, body .logement #right-block {
@@ -8284,23 +8313,10 @@ body {
       body .inscription #right-block, body .logement #right-block {
         padding-top: 10px; } }
     body .inscription #right-block .text, body .logement #right-block .text {
-      position: absolute;
       opacity: 0;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
       max-height: 80%;
-      text-align: center;
-      font-size: 20px;
-      color: #fff;
-      background-color: #7f8c8d; }
-      @media (min-width: 388px) and (max-width: 497px) {
-        body .inscription #right-block .text, body .logement #right-block .text {
-          font-size: 15px; } }
-      @media (max-width: 387px) {
-        body .inscription #right-block .text, body .logement #right-block .text {
-          font-size: 12px; } }
+      text-align: justify; }
     body .inscription #right-block .logo, body .logement #right-block .logo {
       position: absolute;
       opacity: 1;
@@ -8312,11 +8328,12 @@ body {
   body .inscription #right-block:hover .text, body .logement #right-block:hover .text {
     opacity: 1; }
   body .inscription #right-block:hover .image, body .logement #right-block:hover .image {
-    opacity: 0.3; }
+    opacity: 0.4;
+    z-index: -1; }
   body .inscription #right-block:hover .logo, body .logement #right-block:hover .logo {
     opacity: 0; }
   body #buttons {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0; }
     body #buttons #buttons-col {
