@@ -8304,6 +8304,7 @@ body {
         text-align: center;
         padding-left: 4px;
         padding-right: 4px;
+        width: 80%;
         cursor: default; }
     body .inscription #left-block #bottom1, body .inscription #left-block #bottom2, body .logement #left-block #bottom1, body .logement #left-block #bottom2 {
       padding: 5px 5px 0 5px; }
