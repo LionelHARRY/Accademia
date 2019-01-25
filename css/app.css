@@ -8263,7 +8263,7 @@ body {
       text-overflow: ellipsis; }
       @media (min-width: 388px) and (max-width: 497px) {
         body .info #info-col .text {
-          font-size: 15px; } }
+          font-size: 13px; } }
       @media (max-width: 387px) {
         body .info #info-col .text {
           font-size: 12px; } }
