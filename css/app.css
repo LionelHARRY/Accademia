@@ -8254,8 +8254,8 @@ body {
       transform: translate(-50%, -50%);
       opacity: 0.1; }
     body .info #info-col .text {
-      margin-top: 20%;
-      font-size: 20px;
+      margin-top: 5%;
+      font-size: 17px;
       text-align: justify;
       overflow: hidden;
       text-overflow: ellipsis; }
