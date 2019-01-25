@@ -204,6 +204,12 @@ body{
             color: $main-color;
           }
         }
+
+        #adresse{
+          .text{
+            text-align: right;
+          }
+        }
       }
     }
   }

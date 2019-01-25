@@ -8243,6 +8243,8 @@ body {
         padding-right: 2px; }
       body .formulaire .container .form-group .form-check label {
         color: #7f8c8d; }
+      body .formulaire .container .form-group #adresse .text {
+        text-align: right; }
   body .info {
     position: relative;
     width: 100%;
