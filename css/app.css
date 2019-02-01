@@ -8152,7 +8152,7 @@ body {
       body .navigation #logo .name {
         display: inline-block;
         cursor: pointer; }
-        @media (max-width: 400px) {
+        @media (max-width: 540px) {
           body .navigation #logo .name {
             display: none; } }
         body .navigation #logo .name .text {
