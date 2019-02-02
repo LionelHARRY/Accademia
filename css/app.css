@@ -8323,10 +8323,13 @@ body {
       body .inscription #right-block, body .logement #right-block {
         padding-top: 10px; } }
     body .inscription #right-block .text, body .logement #right-block .text {
+      padding: 5px 5px;
       opacity: 0;
       top: 50%;
       max-height: 80%;
-      text-align: justify; }
+      text-align: left;
+      width: 90%;
+      font-size: 18px; }
     body .inscription #right-block .logo, body .logement #right-block .logo {
       position: absolute;
       opacity: 1;

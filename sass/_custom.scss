@@ -322,10 +322,13 @@ body{
       }
 
       .text{
+        padding: 5px 5px;
         opacity: 0;
         top: 50%;
         max-height: 80%;
-        text-align: justify;
+        text-align: left;
+        width: 90%;
+        font-size: 18px;
 
       }
 
