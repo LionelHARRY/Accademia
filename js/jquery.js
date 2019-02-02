@@ -99,7 +99,7 @@ $("#inscription").click(function(){
     $(".inscription").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Inscription | Inscription Canada";
+    document.getElementById("title").innerHTML = "Études | Inscription Canada";
   }
 });
 
