@@ -8230,7 +8230,6 @@ body {
       body .btn-file-form #display-file-form .drop-down-imaqge:hover {
         background: url(../img/drop-down2.png) no-repeat; }
   body .formulaire {
-    height: calc(100vh - 128px);
     position: relative; }
     body .formulaire .container {
       height: 100%; }
@@ -8254,8 +8253,7 @@ body {
         text-align: right; }
   body .info {
     position: relative;
-    width: 100%;
-    height: calc(100vh - 128px); }
+    width: 100%; }
     body .info img {
       position: absolute;
       top: 40%;

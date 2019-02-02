@@ -170,7 +170,6 @@ body{
   }
 
   .formulaire{
-    height: $content-height;
     position: relative;
 
     .container{
@@ -225,7 +224,6 @@ body{
   .info{
     position: relative;
     width: 100%;
-    height: $content-height;
 
     img{
       position: absolute;
