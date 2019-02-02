@@ -8346,7 +8346,6 @@ body {
   body .inscription #right-block:hover .logo, body .logement #right-block:hover .logo {
     opacity: 0; }
   body #buttons {
-    position: fixed;
     width: 100%;
     bottom: 0; }
     body #buttons #buttons-col {
