@@ -8184,6 +8184,12 @@ body {
         max-width: none;
         height: calc(100vh - 128px);
         margin: auto; }
+        @media (max-width: 382px) {
+          body .main-content .carousel-inner .item img {
+            margin-left: -90vw; } }
+        @media (min-width: 383px) and (max-width: 750px) {
+          body .main-content .carousel-inner .item img {
+            margin-left: calc(-90vw + calc(100vw - 383px)); } }
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }

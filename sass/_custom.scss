@@ -97,6 +97,13 @@ body{
           max-width: none;
           height: $content-height;
           margin: auto;
+
+          @media(max-width: 382px){
+            margin-left: -90vw;
+          }
+          @media(min-width: 383px) and (max-width: 750px){
+            margin-left: calc(-90vw + calc(100vw - 383px));
+          }
         }
       }
     }
