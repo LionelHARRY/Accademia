@@ -8183,7 +8183,8 @@ body {
       body .main-content .carousel-inner .item img {
         max-width: none;
         height: calc(100vh - 128px);
-        margin: auto; }
+        margin: auto;
+        min-height: 430px; }
         @media (max-width: 382px) {
           body .main-content .carousel-inner .item img {
             margin-left: -90vw; } }

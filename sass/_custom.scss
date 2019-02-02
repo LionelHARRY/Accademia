@@ -97,6 +97,7 @@ body{
           max-width: none;
           height: $content-height;
           margin: auto;
+          min-height: 430px;
 
           @media(max-width: 382px){
             margin-left: -90vw;
