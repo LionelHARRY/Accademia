@@ -99,11 +99,8 @@ body{
           margin: auto;
           min-height: 430px;
 
-          @media(max-width: 382px){
-            margin-left: -90vw;
-          }
-          @media(min-width: 383px) and (max-width: 750px){
-            margin-left: calc(-90vw + calc(100vw - 383px));
+          @media(min-width: 380px) and (max-width: 750px){
+            margin-left: calc(-110vw + calc(100vw - 380px));
           }
         }
       }

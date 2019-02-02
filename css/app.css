@@ -8185,12 +8185,9 @@ body {
         height: calc(100vh - 128px);
         margin: auto;
         min-height: 430px; }
-        @media (max-width: 382px) {
+        @media (min-width: 380px) and (max-width: 750px) {
           body .main-content .carousel-inner .item img {
-            margin-left: -90vw; } }
-        @media (min-width: 383px) and (max-width: 750px) {
-          body .main-content .carousel-inner .item img {
-            margin-left: calc(-90vw + calc(100vw - 383px)); } }
+            margin-left: calc(-110vw + calc(100vw - 380px)); } }
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }
