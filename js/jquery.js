@@ -85,7 +85,7 @@ $("#dossier").click(function(){
     $(".formulaire").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | Formulaire";
+    document.getElementById("title").innerHTML = "Formulaire | Inscription Canada";
   }
 });
 
@@ -99,7 +99,7 @@ $("#inscription").click(function(){
     $(".inscription").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | Inscription";
+    document.getElementById("title").innerHTML = "Inscription | Inscription Canada";
   }
 });
 
@@ -113,7 +113,7 @@ $("#logement").click(function(){
     $(".logement").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | Logement";
+    document.getElementById("title").innerHTML = "Logement |  Inscription Canada";
   }
 });
 
@@ -127,7 +127,7 @@ $("#info").click(function(){
     $(".info").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | info";
+    document.getElementById("title").innerHTML = "Infos |  Inscription Canada";
   }
 });
 

@@ -8233,6 +8233,9 @@ body {
     position: relative; }
     body .formulaire .container {
       height: 100%; }
+      @media (max-width: 800px) {
+        body .formulaire .container {
+          margin-top: 5%; } }
       body .formulaire .container .form-group input {
         margin-bottom: 20px; }
       body .formulaire .container .form-group hr {
@@ -8251,6 +8254,8 @@ body {
         color: #7f8c8d; }
       body .formulaire .container .form-group #adresse .text {
         text-align: right; }
+      body .formulaire .container textarea {
+        margin-bottom: 10px; }
   body .info {
     position: relative;
     width: 100%; }
