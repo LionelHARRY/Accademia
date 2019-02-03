@@ -33,10 +33,5 @@ if(isset($_POST['email'])) {
 $headers = 'De: '.$email."\r\n".
 'Répondre à: '.$email."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-?>
- 
-<?php
- 
-}
+mail($email_to, $email_subject, $email_message, $headers);  
 ?>
