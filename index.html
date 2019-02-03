@@ -183,21 +183,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <form>
+            <form name="contactform" method="post" action="email_form.php">
               <div class="form-group">
                 <div class="form-row">
                   <div class="col" id="prenom">
-                    <input type="text" class="form-control" placeholder="Prénom" required="True">
+                    <input type="text" class="form-control" placeholder="Prénom" required="True" name="prenom">
                   </div>
 
                   <div class="col" id="nom">
-                    <input type="text" class="form-control" placeholder="Nom" required="True">
+                    <input type="text" class="form-control" placeholder="Nom" required="True" name="nom">
                   </div>
                 </div>
 
                 <div class="form-row">
                   <div class="col" id="age">
-                    <input type="number" class="form-control" placeholder="Age" required="True">
+                    <input type="number" class="form-control" placeholder="Age" required="True" name="age">
                   </div>
 
                   <div class="col" id="nationalite">
@@ -413,11 +413,11 @@
 
                 <div class="form-row">
                   <div class="col" id="tel">
-                    <input type="tel" class="form-control" placeholder="Téléphone">
+                    <input type="tel" class="form-control" placeholder="Téléphone" name="tel">
                   </div>
 
                   <div class="col" id="mail">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder="Email" name="email">
                   </div>
                 </div>
                 <hr>
@@ -437,7 +437,7 @@
                   </div>
 
                   <div class="col" id="formation">
-                    <input type="text" class="form-control" placeholder="Formation">
+                    <input type="text" class="form-control" placeholder="Formation" name="formation">
                   </div>
                 </div>
 
@@ -456,10 +456,10 @@
                   </label>
                 </div>-->
 
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message" name="message"></textarea>
                 <div class="row">
                   <div class="col-xs-6" id="button">
-                    <button type="button" class="btn btn-primary">Envoyer</button>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
                   </div>
                   <div class="col-xs-6" id="adresse">
                     <div class="text"> Tel : 0345565434 <br> Email : info@inscriptioncanada.com</div>
