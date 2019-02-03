@@ -27,6 +27,6 @@ if(isset($_POST['submit'])) {
 	// create email headers
 	$headers = "De: ".$email."\n\n";
 	mail($email_to, $email_subject, $email_message, $headers);
-	header("Location: index.html");
+	header("Location: https://test-ic.netlify.com/");
 }	
 ?>
