@@ -183,8 +183,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-
-            <form name="contactform" method="post" action="email_form.php">
+            <?php include('email_form.php'); ?>
+            <form name="contactform" method="post" action="<?= $_SERVER['PHP_SELF']; ?>" >
               <div class="form-group">
                 <div class="form-row">
                   <div class="col" id="prenom">
@@ -441,21 +441,6 @@
                     <input type="text" class="form-control" placeholder="Formation" name="formation">
                   </div>
                 </div>
-
-                <!--
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    cupiditate
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    praesentium
-                  </label>
-                </div>-->
 
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message" name="message"></textarea>
                 <div class="row">

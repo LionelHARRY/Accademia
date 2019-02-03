@@ -1,4 +1,6 @@
 <?php
+
+print_r($_POST);
 if(isset($_POST['submit'])) {
  
     $email_to = "info@inscriptioncanada.com";
