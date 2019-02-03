@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit'])) {
  
-    $email_to = "lionelharri@gmail.com";
+    $email_to = "info@inscriptioncanada.com";
     $email_subject = "Candidature Inscription Canada";
      
  
