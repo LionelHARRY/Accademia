@@ -103,6 +103,10 @@ body{
           @media(min-width: 380px) and (max-width: 750px){
             margin-left: calc(-110vw + calc(100vw - 380px));
           }
+
+          @media(max-width: 380px){
+            margin-left: -150%;
+          }
         }
       }
     }
