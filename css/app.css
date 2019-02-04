@@ -8361,6 +8361,7 @@ body {
       text-decoration: underline;
       color: #ffff;
       font-family: "impact mt shadow", "times new roman", times;
+      background-color: rgba(0, 0, 0, 0.38);
       cursor: default; }
   body .inscription #right-block:hover .text, body .logement #right-block:hover .text {
     opacity: 1; }
@@ -8439,7 +8440,7 @@ body {
 .section-h {
   padding: 5px 0;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
   .section-h h1 {
     font-size: 28px; }
   .section-h .container {
@@ -8449,7 +8450,7 @@ body {
   padding: 30px 0;
   text-align: center;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
   .section-a .fa {
     font-size: 25px; }
 
@@ -8501,7 +8502,7 @@ body {
   padding: 30px 0;
   text-align: center;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
   .section-realisations .btn-primary {
     background: #7f8c8d;
     border-color: #fff;
@@ -8565,18 +8566,18 @@ body {
   padding: 30px 0;
   text-align: center;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
 
 .panel-heading h4 {
-  color: #000; }
+  color: #fff; }
 
 .list-group-item.active {
-  color: #000; }
+  color: #fff; }
 
 .section-d {
   padding: 30px 0;
   background: #5a6465;
-  color: #000; }
+  color: #fff; }
 
 .section-content {
   padding: 30px 0;
@@ -8662,7 +8663,7 @@ textarea {
       padding: 30px 15px;
       font-size: 25px; }
       .footer-social ul li a {
-        color: #000; }
+        color: #fff; }
 
 footer {
   padding: 5px 0;
