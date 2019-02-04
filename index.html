@@ -129,6 +129,7 @@
           <div class="logo">
             <img src="img/logo-big.png" alt="...">
           </div>
+          <div class="signal">En savoir plus</div>
         </div>
       </div>
     </div>
@@ -175,6 +176,7 @@
           <div class="logo">
             <img src="img/logo-big.png" alt="...">
           </div>
+          <div class="signal">En savoir plus</div>
         </div>
       </div>
     </div>
@@ -183,8 +185,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <?php include('email_form.php'); ?>
-            <form name="contactform" method="post" action="<?= $_SERVER['PHP_SELF']; ?>" >
+
+            <form name="contactform" method="POST" action="email_form.php">
               <div class="form-group">
                 <div class="form-row">
                   <div class="col" id="prenom">

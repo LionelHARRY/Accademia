@@ -49,6 +49,7 @@ body{
         .text{
           color: $main-color;
           font-weight: bold;
+          font-family: $font-family;
         }
       }
 
@@ -112,6 +113,8 @@ body{
       }
 
       h1{
+        font-family: $font-family;
+
         @media(min-width: 921px) and (max-width: 1000px){
           font-size: 30px;
         }
@@ -240,17 +243,18 @@ body{
     #info-col{
       .text{
         margin-top: 5%;
-        font-size: 17px;
+        font-size: 18px;
         text-align: justify;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-family: $font-family;
 
         @media(min-width: 388px) and (max-width: 497px){
-          font-size: 13px;
+          font-size: 14px;
         }
 
         @media(max-width: 387px){
-          font-size: 12px;
+          font-size: 13px;
         }
       }
     }
@@ -306,6 +310,7 @@ body{
           padding-right: 4px;
           width: 80%;
           cursor: default;
+          font-family: $font-family;
         }
       }
 
@@ -331,6 +336,8 @@ body{
         text-align: left;
         width: 90%;
         font-size: 17px;
+        font-family: $font-family;
+        cursor: default;
 
         @media(max-width: 387px){
           font-size: 12px;
@@ -354,6 +361,17 @@ body{
         -ms-transform: translate(-50%, -50%);
         text-align: center;
       }
+
+      .signal{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+
+        text-decoration: underline;
+        color: #ffff;
+        font-family: $font-family;
+        cursor: default;
+      }
     }
 
     #right-block:hover .text{
@@ -366,6 +384,10 @@ body{
     }
 
     #right-block:hover .logo{
+      opacity: 0;
+    }
+
+    #right-block:hover .signal{
       opacity: 0;
     }
   }

@@ -8157,7 +8157,8 @@ body {
             display: none; } }
         body .navigation #logo .name .text {
           color: #7f8c8d;
-          font-weight: bold; }
+          font-weight: bold;
+          font-family: "impact mt shadow", "times new roman", times; }
     body .navigation #title {
       text-align: center; }
       body .navigation #title h1 {
@@ -8191,21 +8192,23 @@ body {
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }
-    @media (min-width: 921px) and (max-width: 1000px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 30px; } }
-    @media (min-width: 607px) and (max-width: 920px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 25px; } }
-    @media (min-width: 498px) and (max-width: 606px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 20px; } }
-    @media (min-width: 388px) and (max-width: 497px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 15px; } }
-    @media (max-width: 387px) {
-      body .main-content .carousel-caption h1 {
-        display: none; } }
+    body .main-content .carousel-caption h1 {
+      font-family: "impact mt shadow", "times new roman", times; }
+      @media (min-width: 921px) and (max-width: 1000px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 30px; } }
+      @media (min-width: 607px) and (max-width: 920px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 25px; } }
+      @media (min-width: 498px) and (max-width: 606px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 20px; } }
+      @media (min-width: 388px) and (max-width: 497px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 15px; } }
+      @media (max-width: 387px) {
+        body .main-content .carousel-caption h1 {
+          display: none; } }
   body .btn-file-form {
     cursor: pointer; }
     body .btn-file-form #display-file-form {
@@ -8264,16 +8267,17 @@ body {
       opacity: 0.1; }
     body .info #info-col .text {
       margin-top: 5%;
-      font-size: 17px;
+      font-size: 18px;
       text-align: justify;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      font-family: "impact mt shadow", "times new roman", times; }
       @media (min-width: 388px) and (max-width: 497px) {
         body .info #info-col .text {
-          font-size: 13px; } }
+          font-size: 14px; } }
       @media (max-width: 387px) {
         body .info #info-col .text {
-          font-size: 12px; } }
+          font-size: 13px; } }
   body .inscription .row, body .logement .row {
     margin-left: 0px;
     margin-right: 0px; }
@@ -8312,7 +8316,8 @@ body {
         padding-left: 4px;
         padding-right: 4px;
         width: 80%;
-        cursor: default; }
+        cursor: default;
+        font-family: "impact mt shadow", "times new roman", times; }
     body .inscription #left-block #bottom1, body .inscription #left-block #bottom2, body .logement #left-block #bottom1, body .logement #left-block #bottom2 {
       padding: 5px 5px 0 5px; }
   body .inscription #right-block, body .logement #right-block {
@@ -8329,7 +8334,9 @@ body {
       max-height: 90%;
       text-align: left;
       width: 90%;
-      font-size: 17px; }
+      font-size: 17px;
+      font-family: "impact mt shadow", "times new roman", times;
+      cursor: default; }
       @media (max-width: 387px) {
         body .inscription #right-block .text, body .logement #right-block .text {
           font-size: 12px; } }
@@ -8347,12 +8354,22 @@ body {
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       text-align: center; }
+    body .inscription #right-block .signal, body .logement #right-block .signal {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      text-decoration: underline;
+      color: #ffff;
+      font-family: "impact mt shadow", "times new roman", times;
+      cursor: default; }
   body .inscription #right-block:hover .text, body .logement #right-block:hover .text {
     opacity: 1; }
   body .inscription #right-block:hover .image, body .logement #right-block:hover .image {
     opacity: 0.4;
     z-index: -1; }
   body .inscription #right-block:hover .logo, body .logement #right-block:hover .logo {
+    opacity: 0; }
+  body .inscription #right-block:hover .signal, body .logement #right-block:hover .signal {
     opacity: 0; }
   body #buttons {
     width: 100%;
