@@ -8191,7 +8191,7 @@ body {
             margin-left: calc(-110vw + calc(100vw - 380px)); } }
         @media (max-width: 380px) {
           body .main-content .carousel-inner .item img {
-            margin-left: -150%; } }
+            margin-left: -180%; } }
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }
