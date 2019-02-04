@@ -8203,12 +8203,9 @@ body {
       @media (min-width: 498px) and (max-width: 606px) {
         body .main-content .carousel-caption h1 {
           font-size: 20px; } }
-      @media (min-width: 388px) and (max-width: 497px) {
+      @media (max-width: 497px) {
         body .main-content .carousel-caption h1 {
           font-size: 15px; } }
-      @media (max-width: 387px) {
-        body .main-content .carousel-caption h1 {
-          font-size: 14px; } }
   body .btn-file-form {
     cursor: pointer; }
     body .btn-file-form #display-file-form {
