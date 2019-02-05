@@ -1,36 +1,3 @@
-
-
-//Check window width
-//$(document).ready(function() {
-    // Optimalisation: Store the references outside the event handler:
-    //var $window = $(window);
-    //var detached = false;
-    //var title;
-
-    //function checkWidth() {
-        //var width = $window.width();
-
-        //if (width < 400) {
-            //detached = true;
-
-            //title = $(".title").detach();
-            //document.getElementById("logo")[0].className = "col-xs-6";
-            //document.getElementById("social")[0].className = "col-xs-6";
-        //}
-
-        //if((width > 400)  && (detached == true)){
-            //$("#nav-row").prepend(title);
-            //document.getElementById("logo")[0].className = "col-xs-4";
-            //document.getElementById("title")[0].className = "col-xs-4";
-            //document.getElementById("social")[0].className = "col-xs-4";
-        //}
-    //}
-    // Execute on load
-    //checkWidth();
-    // Bind event listener
-    //$(window).resize(checkWidth);
-//});
-
 //Ignore parent Div
 $(
   "#buttons",
@@ -131,7 +98,18 @@ $("#info").click(function(){
   }
 });
 
-//$(".btn-file-form").click(function(){
-//    $(".main-content").hide();
-//    $(".formulaire").show();
+//$("#btn-send").click(function(){
+  //document.getElementById('myModal').style.display = "block";
 //});
+
+$(".close").click(function(){
+  document.getElementById('myModal').style.display = "none";
+
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == document.getElementById('myModal')) {
+    document.getElementById('myModal').style.display = "none";
+  }
+}
