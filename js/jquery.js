@@ -98,9 +98,20 @@ $("#info").click(function(){
   }
 });
 
-//$("#btn-send").click(function(){
-  //document.getElementById('myModal').style.display = "block";
-//});
+$("#btn-send").click(function(){
+  if((document.getElementById("idprenom").value !="") &&
+     (document.getElementById("idnom").value !="") &&
+     (document.getElementById("idage").value !="") &&
+     (document.getElementById("paysFormControlSelect1").value !="") &&
+     (document.getElementById("idtel").value !="") &&
+     (document.getElementById("idmail").value !="") &&
+     (document.getElementById("idformation").value !="") &&
+     (document.getElementById("niveauFormControlSelect1").value !="") &&
+     (document.getElementById("niveauFormControlSelect1").value !="")){
+       
+     }
+     document.getElementById('myModal').style.display = "block";
+});
 
 $(".close").click(function(){
   document.getElementById('myModal').style.display = "none";
