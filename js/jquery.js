@@ -108,9 +108,8 @@ $("#btn-send").click(function(){
      (document.getElementById("idformation").value !="") &&
      (document.getElementById("niveauFormControlSelect1").value !="") &&
      (document.getElementById("niveauFormControlSelect1").value !="")){
-       
+        document.getElementById('myModal').style.display = "block";
      }
-     document.getElementById('myModal').style.display = "block";
 });
 
 $(".close").click(function(){

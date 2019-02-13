@@ -33,7 +33,7 @@ if(isset($_POST['submit'])) {
     $email_message .= "Message: ".clean_string($message)."\n";
 
 	mail($email_to, $email_subject, $email_message);
-	header("Location: https://inscriptioncanada.com");
+	header("Location: https://www.inscriptioncanada.com");
 
 }
 ?>
