@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title id="title">Accademia</title>
+    <title id="title">inscription Canada</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
 
@@ -17,7 +17,7 @@
           </div>
           <div class="name">
             <div class="text" onClick="window.location.reload()">
-              ACCADEMIA-STUD
+              INSCRIPTION CANADA
             </div>
           </div>
         </div>
@@ -49,22 +49,24 @@
           <div id="item1" class="item active">
             <img src="img/showcase.jpg" alt="...">
             <div class="carousel-caption">
-              <h1><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit ?</span></h1>
-              <p><span>ACCADEMIA Phasellus viverra nulla ut metus.</span></p>
+              <h1><span>De l’inscription à l’université au contrat de location pour
+                 un logement avant votre demande de visa...</span></h1>
+              <p><span>Inscription Canada vous conseil et fait toutes les démarches pour vous.</span></p>
             </div>
           </div>
           <div id="item2" class="item">
             <img src="img/showcase2.jpg" alt="...">
             <div class="carousel-caption">
-              <h1><span>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero</span></h1>
-              <p><span>ACCADEMIA  augue velit cursus nunc.</span></p>
+              <h1><span>Trouver un logement étudiant dans un campus universitaire
+                 ou un appartement en ville...</span></h1>
+              <p><span>Inscription Canada vous conseil et fait toutes les démarches pour vous.</span></p>
             </div>
           </div>
           <div id="item3" class="item">
             <img src="img/showcase3.jpg" alt="...">
             <div class="carousel-caption">
-              <h1><span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</span></h1>
-              <p><span>ACCADEMIA nisi ut aliquid ex ea commodi consequatur.</span></p>
+              <h1><span>Vous souhaitez faire vos études supérieures ou universitaires au Canada...</span></h1>
+              <p><span>Inscription Canada conseil, prépare et dépose votre demande d'admission.</span></p>
             </div>
           </div>
         </div>
@@ -89,7 +91,7 @@
             <div id="top" class="col-xs-12">
               <img src="img/appart-top.jpg" alt="...">
               <div class="text">
-                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+                Appartement meublé ou non meublé, selon vos moyens et préférences
               </div>
             </div>
 
@@ -107,11 +109,20 @@
           <img class="image" src="img/appart-left.jpg" alt="...">
 
           <div class="text">
-            Accademia enean vulputate eleifend tellus. Aenean leo ligula,
-            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-            dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
-            ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-             Etiam ultricies nisi vel augue.
+            <p>Apres votre inscription a l'université ou college et l'obtention d'un permis
+             d'etudes, la prochaine etape c'est trouver un logement.</p>
+
+            <p><b>Inscription Canada</b> s'occupe de tout, en vous proposant un
+                vaste choix de logements de toutes tailles et tarifs.</p>
+
+            <p><b>Appartement meublé individuel ou en collocation:</b><br>
+            Vous preferez ne pas meubler un appartement? Emmenagez dans un appartement
+             completement meublé avec juste votre valise.</p>
+
+            <p><b>Appartement non meublé:</b><br>
+            Personnalisez-la comme bon vous semble en apportant vos propres meubles
+            et affaires.</p>
+
           </div>
 
           <div class="logo">
@@ -128,7 +139,8 @@
             <div id="top" class="col-xs-12">
               <img src="img/amphi-top.jpg" alt="...">
               <div class="text">
-                mollitia animi, id est laborum et dolorum fuga
+                Plus de 300 universités et collèges dans tout
+                 le Canada avec des milliers de programmes disponibles
               </div>
             </div>
 
@@ -146,11 +158,17 @@
           <img class="image" src="img/amphi-left.jpg" alt="...">
 
           <div class="text">
-            Accademia Quisque rutrum. Aenean imperdiet.
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-             Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-             condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-             sem neque sed ipsum. Nam quam nunc, blandit.
+            <p>Vous souhaitez faire vos études au Canada, mais vous ne savez pas comment procéder...</p>
+
+            <p><b>Inscription Canada</b> s'occupe de tout a votre place en vous conseillant:
+              Choix de la ville, université, programme, documents a fournir ainsi que les équivalences
+               des diplomes jusqu'à l'obtention d'une inscription et permis d'études.</p>
+
+            <p>Plus de 300 universités et colleges dans tout le Canada avec des milliers
+              de programmes disponibles.</p>
+
+            <p>Nous pouvons vous apporter la même assistance pour vos projets d'etudes aux Etats-Unis.</p>
+
           </div>
 
           <div class="logo">
@@ -164,66 +182,275 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <form>
+
+            <form name="contactform" method="POST" action="email_form.php">
               <div class="form-group">
                 <div class="form-row">
                   <div class="col" id="prenom">
-                    <input type="text" class="form-control" placeholder="Prénom" required="True">
+                    <input type="text" id="idprenom" class="form-control" placeholder="Prénom" required="True" name="prenom">
                   </div>
 
                   <div class="col" id="nom">
-                    <input type="text" class="form-control" placeholder="Nom" required="True">
+                    <input type="text" id="idnom" class="form-control" placeholder="Nom" required="True" name="nom">
                   </div>
                 </div>
 
                 <div class="form-row">
                   <div class="col" id="age">
-                    <input type="number" class="form-control" placeholder="Age" required="True">
+                    <input type="number" id="idage" class="form-control" placeholder="Age" required="True" name="age">
                   </div>
 
                   <div class="col" id="nationalite">
-                    <input type="text" class="form-control" placeholder="Nationalité" required="True">
+                    <!--<input type="text" class="form-control" placeholder="Nationalité" required="True">-->
+                    <select class="form-control" id="paysFormControlSelect1" name="nationalite">
+                      <option disabled selected>Nationalité</option>
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="Afrique du Sud">Afrique du Sud</option>
+                      <option value="Akrotiri">Akrotiri</option>
+                      <option value="Albanie">Albanie</option>
+                      <option value="Algérie">Algérie</option>
+                      <option value="Allemagne">Allemagne</option>
+                      <option value="Andorre">Andorre</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antarctique">Antarctique</option>
+                      <option value="Antigua-et-Barbuda">Antigua-et-Barbuda</option>
+                      <option value="Arabie saoudite">Arabie saoudite</option>
+                      <option value="Argentine">Argentine</option>
+                      <option value="Arménie">Arménie</option>
+                      <option value="Australie">Australie</option>
+                      <option value="Autriche">Autriche</option>
+                      <option value="Azerbaïdjan">Azerbaïdjan</option>
+                      <option value="Bahamas">Bahamas</option>
+                      <option value="Bahreïn">Bahreïn</option>
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="Barbade">Barbade</option>
+                      <option value="Belau">Belau</option>
+                      <option value="Belgique">Belgique</option>
+                      <option value="Belize">Belize</option>
+                      <option value="Bénin">Bénin</option>
+                      <option value="Bermudes">Bermudes</option>
+                      <option value="Bhoutan">Bhoutan</option>
+                      <option value="Biélorussie">Biélorussie</option>
+                      <option value="Birmanie">Birmanie</option>
+                      <option value="Bolivie">Bolivie</option>
+                      <option value="Bosnie-Herzégovi">Bosnie-Herzégovi</option>
+                      <option value="Botswana">Botswana</option>
+                      <option value="Brésil">Brésil</option>
+                      <option value="Brunei">Brunei</option>
+                      <option value="Bulgarie">Bulgarie</option>
+                      <option value="Burkina Faso">Burkina Faso</option>
+                      <option value="Burundi">Burundi</option>
+                      <option value="Cambodge">Cambodge</option>
+                      <option value="Cameroun">Cameroun</option>
+                      <option value="Cap-Vert">Cap-Vert</option>
+                      <option value="Chili">Chili</option>
+                      <option value="Chine">Chine</option>
+                      <option value="Chypre">Chypre</option>
+                      <option value="Colombie">Colombie</option>
+                      <option value="Comores">Comores</option>
+                      <option value="Congo">Congo</option>
+                      <option value="Corée du Sud">Corée du Sud</option>
+                      <option value="Costa Rica">Costa Rica</option>
+                      <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                      <option value="Croatie">Croatie</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Curacao">Curacao</option>
+                      <option value="Danemark">Danemark</option>
+                      <option value="Dhekelia">Dhekelia</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominique">Dominique</option>
+                      <option value="Égypte">Égypte</option>
+                      <option value="Émirats arabes unis">Émirats arabes unis</option>
+                      <option value="Équateur">Équateur</option>
+                      <option value="Érythrée">Érythrée</option>
+                      <option value="Espagne">Espagne</option>
+                      <option value="Estonie">Estonie</option>
+                      <option value="Éthiopie">Éthiopie</option>
+                      <option value="Finlande">Finlande</option>
+                      <option value="France">France</option>
+                      <option value="Gabon">Gabon</option>
+                      <option value="Gambie">Gambie</option>
+                      <option value="Géorgie">Géorgie</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Gibraltar">Gibraltar</option>
+                      <option value="Grèce">Grèce</option>
+                      <option value="Grenade">Grenade</option>
+                      <option value="Groenland">Groenland</option>
+                      <option value="Guam">Guam</option>
+                      <option value="Guatemala">Guatemala</option>
+                      <option value="Guernsey">Guernsey</option>
+                      <option value="Guinée">Guinée</option>
+                      <option value="Guinée équatoriale">Guinée équatoriale</option>
+                      <option value="Guinée-Bissao">Guinée-Bissao</option>
+                      <option value="Guyana">Guyana</option>
+                      <option value="Haïti">Haïti</option>
+                      <option value="Honduras">Honduras</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="Hongrie">Hongrie</option>
+                      <option value="Inde">Inde</option>
+                      <option value="Indonésie">Indonésie</option>
+                      <option value="Iran">Iran</option>
+                      <option value="Iraq">Iraq</option>
+                      <option value="Irlande">Irlande</option>
+                      <option value="Islande">Islande</option>
+                      <option value="Israël">Israël</option>
+                      <option value="Italie">Italie</option>
+                      <option value="Jamaïque">Jamaïque</option>
+                      <option value="Japon">Japon</option>
+                      <option value="Jersey">Jersey</option>
+                      <option value="Jordanie">Jordanie</option>
+                      <option value="Kazakhstan">Kazakhstan</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kirghizistan">Kirghizistan</option>
+                      <option value="Kiribati">Kiribati</option>
+                      <option value="Kosovo">Kosovo</option>
+                      <option value="Koweït">Koweït</option>
+                      <option value="Laos">Laos</option>
+                      <option value="Lesotho">Lesotho</option>
+                      <option value="Lettonie">Lettonie</option>
+                      <option value="Liban">Liban</option>
+                      <option value="Liberia">Liberia</option>
+                      <option value="Libye">Libye</option>
+                      <option value="Liechtenstein">Liechtenstein</option>
+                      <option value="Lituanie">Lituanie</option>
+                      <option value="Luxembourg">Luxembourg</option>
+                      <option value="Macao">Macao</option>
+                      <option value="Madagascar">Madagascar</option>
+                      <option value="Malaisie">Malaisie</option>
+                      <option value="Malawi">Malawi</option>
+                      <option value="Maldives">Maldives</option>
+                      <option value="Mali">Mali</option>
+                      <option value="Malte">Malte</option>
+                      <option value="Maroc">Maroc</option>
+                      <option value="Maurice">Maurice</option>
+                      <option value="Mauritanie">Mauritanie</option>
+                      <option value="Mexique">Mexique</option>
+                      <option value="Micronésie">Micronésie</option>
+                      <option value="Moldavie">Moldavie</option>
+                      <option value="Monaco">Monaco</option>
+                      <option value="Monde">Monde</option>
+                      <option value="Mongolie">Mongolie</option>
+                      <option value="Monténégro">Monténégro</option>
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Mozambique">Mozambique</option>
+                      <option value="Namibie">Namibie</option>
+                      <option value="Népal">Népal</option>
+                      <option value="Nicaragua">Nicaragua</option>
+                      <option value="Niger">Niger</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Nioué">Nioué</option>
+                      <option value="Norvège">Norvège</option>
+                      <option value="Nouvelle-Calédonie">Nouvelle-Calédonie</option>
+                      <option value="Nouvelle-Zélande">Nouvelle-Zélande</option>
+                      <option value="Oman">Oman</option>
+                      <option value="Ouganda">Ouganda</option>
+                      <option value="Ouzbékistan">Ouzbékistan</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="Panama">Panama</option>
+                      <option value="Papouasie-Nouvelle-Guinée">Papouasie-Nouvelle-Guinée</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Pays-Bas">Pays-Bas</option>
+                      <option value="Pérou">Pérou</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Pologne">Pologne</option>
+                      <option value="Polynésie français">Polynésie française</option>
+                      <option value="Porto Rico">Porto Rico</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Qatar">Qatar</option>
+                      <option value="République centrafricaine">République centrafricaine</option>
+                      <option value="République démocratique du Congo">République démocratique du Congo</option>
+                      <option value="République dominicaine">République dominicaine</option>
+                      <option value="République tchèque">République tchèque</option>
+                      <option value="Roumanie">Roumanie</option>
+                      <option value="Royaume-Uni">Royaume-Uni</option>
+                      <option value="Russie">Russie</option>
+                      <option value="Rwanda">Rwanda</option>
+                      <option value="Salvador">Salvador</option>
+                      <option value="Samoa">Samoa</option>
+                      <option value="Sao Tomé-et-Principe">Sao Tomé-et-Principe</option>
+                      <option value="Sénégal">Sénégal</option>
+                      <option value="Serbie">Serbie</option>
+                      <option value="Seychelles">Seychelles</option>
+                      <option value="Sierra Leone">Sierra Leone</option>
+                      <option value="Singapour">Singapour</option>
+                      <option value="Slovaquie">Slovaquie</option>
+                      <option value="Slovénie">Slovénie</option>
+                      <option value="Somalie">Somalie</option>
+                      <option value="Soudan">Soudan</option>
+                      <option value="Soudan du Sud">Soudan du Sud</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Suède">Suède</option>
+                      <option value="Suisse">Suisse</option>
+                      <option value="Suriname">Suriname</option>
+                      <option value="Swaziland">Swaziland</option>
+                      <option value="Syrie">Syrie</option>
+                      <option value="Tadjikistan">Tadjikistan</option>
+                      <option value="Taïwan">Taïwan</option>
+                      <option value="Tanzanie">Tanzanie</option>
+                      <option value="Tchad">Tchad</option>
+                      <option value="Thaïlande">Thaïlande</option>
+                      <option value="Togo">Togo</option>
+                      <option value="Tokélaou">Tokélaou</option>
+                      <option value="Tonga">Tonga</option>
+                      <option value="Trinité-et-Tobago">Trinité-et-Tobago</option>
+                      <option value="Tunisie">Tunisie</option>
+                      <option value="Turkménistan">Turkménistan</option>
+                      <option value="Turquie">Turquie</option>
+                      <option value="Tuvalu">Tuvalu</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Vanuatu">Vanuatu</option>
+                      <option value="Venezuela">Venezuela</option>
+                      <option value="Viêtnam">Viêtnam</option>
+                      <option value="Yémen">Yémen</option>
+                      <option value="Zambie">Zambie</option>
+                      <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
                   </div>
                 </div>
                 <hr>
 
                 <div class="form-row">
                   <div class="col" id="tel">
-                    <input type="tel" class="form-control" placeholder="Téléphone">
+                    <input type="tel" id="idtel" class="form-control" placeholder="Téléphone" name="tel">
                   </div>
 
                   <div class="col" id="mail">
-                    <input type="text" class="form-control" placeholder="Email">
+                    <input type="email" id="idmail" class="form-control" placeholder="Email" name="email">
                   </div>
                 </div>
                 <hr>
 
                 <div class="form-row">
                   <div class="col" id="niveau">
-                    <input type="text" class="form-control" placeholder="Niveau d'études">
+                    <!--<input type="text" class="form-control" placeholder="Niveau d'études">-->
+                    <select class="form-control" id="niveauFormControlSelect1" name="niveau">
+                      <option disabled selected>Niveau d'études</option>
+                      <option value="Bac">Bac</option>
+                      <option value="Bac+1">Bac+1</option>
+                      <option value="Bac+2">Bac+2</option>
+                      <option value="Bac+3">Bac+3</option>
+                      <option value="Bac+4">Bac+4</option>
+                      <option value="Bac+5">Bac+5</option>
+                    </select>
                   </div>
 
                   <div class="col" id="formation">
-                    <input type="text" class="form-control" placeholder="Formation">
+                    <input type="text" id="idformation" class="form-control" placeholder="Formation" name="formation">
                   </div>
                 </div>
 
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    cupiditate
-                  </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message" name="message"></textarea>
+                <div class="row">
+                  <div class="col-xs-6" id="button">
+                    <button type="submit" name="submit" class="btn btn-primary" id="btn-send">Envoyer</button>
+                  </div>
+                  <div class="col-xs-6" id="adresse">
+                    <div class="text"> Tel : +1(438)992-5137 <br> Email : info@inscriptioncanada.com</div>
+                  </div>
                 </div>
 
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="">
-                    praesentium
-                  </label>
-                </div>
-
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message"></textarea>
-                <button type="button" class="btn btn-primary">Send</button>
               </div>
             </form>
           </div>
@@ -238,49 +465,70 @@
           <div id="info-col" class="col-md-8 col-md-offset-2">
 
             <div class="text">
-              <p>pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
-              Phasellus viverra nulla
-             ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-              Etiam ultricies nisi vel augue.</p>
+              <p><b>Inscription Canada</b> est une organisation à but non lucratif,
+                 qui aide les personnes qui aimeraient faire leurs études en
+                Amérique du nord et plus précisément au Canada et même aux États-Unis.</p>
 
-              <p> Aenean imperdiet.Etiam ultricies nisi vel augue.  Aenean leo ligula,
-              porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-              dapibus in, viverra quis, feugiat a, tellus.</p>
+              <p>Les personnes que nous assistons sont généralement les personnes
+                vivant dans les pays sous-développés et mêmes développés mais qui
+                ne savent pas quoi faire et comment s’y prendre, quelle démarche
+                faire, les documents à fournir
+                 ainsi que les équivalences des diplômes, les programmes, etc...</p>
 
-              <p> Quisque rutrum. Aenean imperdiet. eu, consequat vitae, eleifend
-                ac, enim. Aliquam lorem ante,
-              dapibus in, viverra quis, feugiat a, tellus. Phasellus</p>
+              <p><b>Inscription Canada</b> vous assiste dans toutes ses démarches,
+                 conseil, documents, équivalences, inscription.</p>
 
-              <p>Nulla consequat massa quis enim
-              Phasellus viverra nulla
-             ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-              Etiam ultricies nisi vel augue.</p>
+              <p>Les personnes que nous assistons, après avoir obtenues leurs
+                 inscriptions en besoin de se trouver un logement,
+                 que ce soit un studio pour étudiant ou un appartement en ville.</p>
+
+              <p><b>Inscription Canada</b> vous assiste dans toutes ses démarches pour
+                 trouver un logement répondant à votre bourse.</p>
+
+              <p>Il est très important de savoir, pour obtenir un visa d’études,
+                 un permis d’études, il faut avoir une inscription et un contrat
+                  de bail (logement).</p>
+
+              <p>PS : <b>Inscription Canada</b> n’est pas une agence de voyage,
+                 ni une agence de l’immigration.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal" style="display: none">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Votre message a bien été envoyé...</p>
+      </div>
+
+    </div>
+
+
     <div id="buttons">
       <div id="buttons-col" class="col-md-8 col-md-offset-2">
         <div class="row">
-          <div id="logement" class="col-xs-3">
-            <div class="text">Maecenas</div>
+          <div id="inscription" class="col-xs-3">
+            <div class="text">Etudes</div>
             <div class="image">
             </div>
           </div>
-          <div id="inscription" class="col-xs-3">
-            <div class="text">faucibus</div>
+          <div id="logement" class="col-xs-3">
+            <div class="text">Logements</div>
             <div class="image">
             </div>
           </div>
           <div id="dossier" class="col-xs-3">
-            <div class="text">Curabitur</div>
+            <div class="text">Contact</div>
             <div class="image">
             </div>
           </div>
           <div id="info" class="col-xs-3">
-            <div class="text">Goitnanec</div>
+            <div class="text">Infos</div>
             <div class="image">
             </div>
           </div>

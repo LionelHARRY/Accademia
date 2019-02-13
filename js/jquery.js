@@ -1,36 +1,3 @@
-
-
-//Check window width
-//$(document).ready(function() {
-    // Optimalisation: Store the references outside the event handler:
-    //var $window = $(window);
-    //var detached = false;
-    //var title;
-
-    //function checkWidth() {
-        //var width = $window.width();
-
-        //if (width < 400) {
-            //detached = true;
-
-            //title = $(".title").detach();
-            //document.getElementById("logo")[0].className = "col-xs-6";
-            //document.getElementById("social")[0].className = "col-xs-6";
-        //}
-
-        //if((width > 400)  && (detached == true)){
-            //$("#nav-row").prepend(title);
-            //document.getElementById("logo")[0].className = "col-xs-4";
-            //document.getElementById("title")[0].className = "col-xs-4";
-            //document.getElementById("social")[0].className = "col-xs-4";
-        //}
-    //}
-    // Execute on load
-    //checkWidth();
-    // Bind event listener
-    //$(window).resize(checkWidth);
-//});
-
 //Ignore parent Div
 $(
   "#buttons",
@@ -85,7 +52,7 @@ $("#dossier").click(function(){
     $(".formulaire").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | Formulaire";
+    document.getElementById("title").innerHTML = "Formulaire | Inscription Canada";
   }
 });
 
@@ -99,7 +66,7 @@ $("#inscription").click(function(){
     $(".inscription").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | Inscription";
+    document.getElementById("title").innerHTML = "Études | Inscription Canada";
   }
 });
 
@@ -113,7 +80,7 @@ $("#logement").click(function(){
     $(".logement").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | Logement";
+    document.getElementById("title").innerHTML = "Logement |  Inscription Canada";
   }
 });
 
@@ -127,11 +94,32 @@ $("#info").click(function(){
     $(".info").show();
 
     //Rename the title
-    document.getElementById("title").innerHTML = "Accademia | info";
+    document.getElementById("title").innerHTML = "Infos |  Inscription Canada";
   }
 });
 
-//$(".btn-file-form").click(function(){
-//    $(".main-content").hide();
-//    $(".formulaire").show();
-//});
+$("#btn-send").click(function(){
+  if((document.getElementById("idprenom").value !="") &&
+     (document.getElementById("idnom").value !="") &&
+     (document.getElementById("idage").value !="") &&
+     (document.getElementById("paysFormControlSelect1").value !="") &&
+     (document.getElementById("idtel").value !="") &&
+     (document.getElementById("idmail").value !="") &&
+     (document.getElementById("idformation").value !="") &&
+     (document.getElementById("niveauFormControlSelect1").value !="") &&
+     (document.getElementById("niveauFormControlSelect1").value !="")){
+        document.getElementById('myModal').style.display = "block";
+     }
+});
+
+$(".close").click(function(){
+  document.getElementById('myModal').style.display = "none";
+
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == document.getElementById('myModal')) {
+    document.getElementById('myModal').style.display = "none";
+  }
+}

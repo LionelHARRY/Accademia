@@ -8134,7 +8134,10 @@ h2 {
 
 body {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  /* The Modal (background) */
+  /* Modal Content */
+  /* The Close Button */ }
   body .navigation {
     height: 50px;
     width: 100%;
@@ -8148,16 +8151,17 @@ body {
         display: inline-block; }
         body .navigation #logo .image img {
           cursor: pointer;
-          width: 50px; }
+          width: 80px; }
       body .navigation #logo .name {
         display: inline-block;
         cursor: pointer; }
-        @media (max-width: 400px) {
+        @media (max-width: 540px) {
           body .navigation #logo .name {
             display: none; } }
         body .navigation #logo .name .text {
           color: #7f8c8d;
-          font-weight: bold; }
+          font-weight: bold;
+          font-family: "impact mt shadow", "times new roman", times; }
     body .navigation #title {
       text-align: center; }
       body .navigation #title h1 {
@@ -8183,25 +8187,31 @@ body {
       body .main-content .carousel-inner .item img {
         max-width: none;
         height: calc(100vh - 128px);
-        margin: auto; }
+        margin: auto;
+        min-height: 430px; }
+        @media (min-width: 380px) and (max-width: 750px) {
+          body .main-content .carousel-inner .item img {
+            margin-left: calc(-110vw + calc(100vw - 380px)); } }
+        @media (max-width: 380px) {
+          body .main-content .carousel-inner .item img {
+            margin-left: -180%; } }
     body .main-content .carousel-caption span {
       cursor: default;
       background-color: rgba(0, 0, 0, 0.38); }
-    @media (min-width: 921px) and (max-width: 1000px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 30px; } }
-    @media (min-width: 607px) and (max-width: 920px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 25px; } }
-    @media (min-width: 498px) and (max-width: 606px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 20px; } }
-    @media (min-width: 388px) and (max-width: 497px) {
-      body .main-content .carousel-caption h1 {
-        font-size: 15px; } }
-    @media (max-width: 387px) {
-      body .main-content .carousel-caption h1 {
-        display: none; } }
+    body .main-content .carousel-caption h1 {
+      font-family: "impact mt shadow", "times new roman", times; }
+      @media (min-width: 921px) and (max-width: 1000px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 30px; } }
+      @media (min-width: 607px) and (max-width: 920px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 25px; } }
+      @media (min-width: 498px) and (max-width: 606px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 20px; } }
+      @media (max-width: 497px) {
+        body .main-content .carousel-caption h1 {
+          font-size: 15px; } }
   body .btn-file-form {
     cursor: pointer; }
     body .btn-file-form #display-file-form {
@@ -8223,10 +8233,12 @@ body {
       body .btn-file-form #display-file-form .drop-down-imaqge:hover {
         background: url(../img/drop-down2.png) no-repeat; }
   body .formulaire {
-    height: calc(100vh - 128px);
     position: relative; }
     body .formulaire .container {
       height: 100%; }
+      @media (max-width: 800px) {
+        body .formulaire .container {
+          margin-top: 5%; } }
       body .formulaire .container .form-group input {
         margin-bottom: 20px; }
       body .formulaire .container .form-group hr {
@@ -8243,10 +8255,13 @@ body {
         padding-right: 2px; }
       body .formulaire .container .form-group .form-check label {
         color: #7f8c8d; }
+      body .formulaire .container .form-group #adresse .text {
+        text-align: right; }
+      body .formulaire .container textarea {
+        margin-bottom: 10px; }
   body .info {
     position: relative;
-    width: 100%;
-    height: calc(100vh - 128px); }
+    width: 100%; }
     body .info img {
       position: absolute;
       top: 40%;
@@ -8254,17 +8269,18 @@ body {
       transform: translate(-50%, -50%);
       opacity: 0.1; }
     body .info #info-col .text {
-      margin-top: 20%;
-      font-size: 20px;
+      margin-top: 5%;
+      font-size: 18px;
       text-align: justify;
       overflow: hidden;
-      text-overflow: ellipsis; }
+      text-overflow: ellipsis;
+      font-family: "impact mt shadow", "times new roman", times; }
       @media (min-width: 388px) and (max-width: 497px) {
         body .info #info-col .text {
-          font-size: 15px; } }
+          font-size: 14px; } }
       @media (max-width: 387px) {
         body .info #info-col .text {
-          font-size: 12px; } }
+          font-size: 13px; } }
   body .inscription .row, body .logement .row {
     margin-left: 0px;
     margin-right: 0px; }
@@ -8302,7 +8318,9 @@ body {
         text-align: center;
         padding-left: 4px;
         padding-right: 4px;
-        cursor: default; }
+        width: 80%;
+        cursor: default;
+        font-family: "impact mt shadow", "times new roman", times; }
     body .inscription #left-block #bottom1, body .inscription #left-block #bottom2, body .logement #left-block #bottom1, body .logement #left-block #bottom2 {
       padding: 5px 5px 0 5px; }
   body .inscription #right-block, body .logement #right-block {
@@ -8313,10 +8331,24 @@ body {
       body .inscription #right-block, body .logement #right-block {
         padding-top: 10px; } }
     body .inscription #right-block .text, body .logement #right-block .text {
+      padding: 5px 5px;
       opacity: 0;
       top: 50%;
-      max-height: 80%;
-      text-align: justify; }
+      max-height: 90%;
+      text-align: left;
+      width: 90%;
+      font-size: 17px;
+      font-family: "impact mt shadow", "times new roman", times;
+      cursor: default; }
+      @media (max-width: 387px) {
+        body .inscription #right-block .text, body .logement #right-block .text {
+          font-size: 12px; } }
+      @media (min-width: 388px) and (max-width: 497px) {
+        body .inscription #right-block .text, body .logement #right-block .text {
+          font-size: 13px; } }
+      @media (min-width: 498px) and (max-width: 608px) {
+        body .inscription #right-block .text, body .logement #right-block .text {
+          font-size: 15px; } }
     body .inscription #right-block .logo, body .logement #right-block .logo {
       position: absolute;
       opacity: 1;
@@ -8325,6 +8357,15 @@ body {
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       text-align: center; }
+    body .inscription #right-block .signal, body .logement #right-block .signal {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      text-decoration: underline;
+      color: #ffff;
+      font-family: "impact mt shadow", "times new roman", times;
+      background-color: rgba(0, 0, 0, 0.38);
+      cursor: default; }
   body .inscription #right-block:hover .text, body .logement #right-block:hover .text {
     opacity: 1; }
   body .inscription #right-block:hover .image, body .logement #right-block:hover .image {
@@ -8332,8 +8373,47 @@ body {
     z-index: -1; }
   body .inscription #right-block:hover .logo, body .logement #right-block:hover .logo {
     opacity: 0; }
-  body #buttons {
+  body .inscription #right-block:hover .signal, body .logement #right-block:hover .signal {
+    opacity: 0; }
+  body .modal {
+    display: none;
+    /* Hidden by default */
     position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */ }
+  body .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 360px; }
+  body .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; }
+  body .close:hover,
+  body .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
+  body #buttons {
     width: 100%;
     bottom: 0; }
     body #buttons #buttons-col {
@@ -8401,7 +8481,7 @@ body {
 .section-h {
   padding: 5px 0;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
   .section-h h1 {
     font-size: 28px; }
   .section-h .container {
@@ -8411,7 +8491,7 @@ body {
   padding: 30px 0;
   text-align: center;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
   .section-a .fa {
     font-size: 25px; }
 
@@ -8463,7 +8543,7 @@ body {
   padding: 30px 0;
   text-align: center;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
   .section-realisations .btn-primary {
     background: #7f8c8d;
     border-color: #fff;
@@ -8527,18 +8607,18 @@ body {
   padding: 30px 0;
   text-align: center;
   background: #7f8c8d;
-  color: #000; }
+  color: #fff; }
 
 .panel-heading h4 {
-  color: #000; }
+  color: #fff; }
 
 .list-group-item.active {
-  color: #000; }
+  color: #fff; }
 
 .section-d {
   padding: 30px 0;
   background: #5a6465;
-  color: #000; }
+  color: #fff; }
 
 .section-content {
   padding: 30px 0;
@@ -8624,7 +8704,7 @@ textarea {
       padding: 30px 15px;
       font-size: 25px; }
       .footer-social ul li a {
-        color: #000; }
+        color: #fff; }
 
 footer {
   padding: 5px 0;

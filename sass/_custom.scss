@@ -34,7 +34,7 @@ body{
         display: inline-block;
         img{
           cursor: pointer;
-          width: 50px;
+          width: 80px;
         }
       }
 
@@ -42,13 +42,14 @@ body{
         display: inline-block;
         cursor: pointer;
 
-        @media(max-width: 400px){
+        @media(max-width: 540px){
           display: none;
         }
 
         .text{
           color: $main-color;
           font-weight: bold;
+          font-family: $font-family;
         }
       }
 
@@ -91,12 +92,21 @@ body{
 
     .carousel-inner{
       background-color: $main-color;
-      
+
       .item{
         img{
           max-width: none;
           height: $content-height;
           margin: auto;
+          min-height: 430px;
+
+          @media(min-width: 380px) and (max-width: 750px){
+            margin-left: calc(-110vw + calc(100vw - 380px));
+          }
+
+          @media(max-width: 380px){
+            margin-left: -180%;
+          }
         }
       }
     }
@@ -107,6 +117,8 @@ body{
       }
 
       h1{
+        font-family: $font-family;
+
         @media(min-width: 921px) and (max-width: 1000px){
           font-size: 30px;
         }
@@ -119,12 +131,8 @@ body{
           font-size: 20px;
         }
 
-        @media(min-width: 388px) and (max-width: 497px){
+        @media(max-width: 497px){
           font-size: 15px;
-        }
-
-        @media(max-width: 387px){
-          display: none;
         }
       }
     }
@@ -162,11 +170,13 @@ body{
   }
 
   .formulaire{
-    height: $content-height;
     position: relative;
 
     .container{
       height: 100%;
+      @media(max-width: 800px){
+        margin-top: 5%;
+      }
 
       .form-group{
         input{
@@ -204,6 +214,16 @@ body{
             color: $main-color;
           }
         }
+
+        #adresse{
+          .text{
+            text-align: right;
+          }
+        }
+      }
+
+      textarea{
+        margin-bottom: 10px;
       }
     }
   }
@@ -211,7 +231,6 @@ body{
   .info{
     position: relative;
     width: 100%;
-    height: $content-height;
 
     img{
       position: absolute;
@@ -223,18 +242,19 @@ body{
 
     #info-col{
       .text{
-        margin-top: 20%;
-        font-size: 20px;
+        margin-top: 5%;
+        font-size: 18px;
         text-align: justify;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-family: $font-family;
 
         @media(min-width: 388px) and (max-width: 497px){
-          font-size: 15px;
+          font-size: 14px;
         }
 
         @media(max-width: 387px){
-          font-size: 12px;
+          font-size: 13px;
         }
       }
     }
@@ -288,8 +308,9 @@ body{
           text-align: center;
           padding-left: 4px;
           padding-right: 4px;
+          width: 80%;
           cursor: default;
-
+          font-family: $font-family;
         }
       }
 
@@ -308,11 +329,27 @@ body{
       }
 
       .text{
+        padding: 5px 5px;
         opacity: 0;
         top: 50%;
-        max-height: 80%;
-        text-align: justify;
+        max-height: 90%;
+        text-align: left;
+        width: 90%;
+        font-size: 17px;
+        font-family: $font-family;
+        cursor: default;
 
+        @media(max-width: 387px){
+          font-size: 12px;
+        }
+
+        @media(min-width: 388px) and (max-width: 497px){
+          font-size: 13px;
+        }
+
+        @media(min-width: 498px) and (max-width: 608px){
+          font-size: 15px;
+        }
       }
 
       .logo{
@@ -338,10 +375,53 @@ body{
     #right-block:hover .logo{
       opacity: 0;
     }
+
+    #right-block:hover .signal{
+      opacity: 0;
+    }
   }
 
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 360px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
   #buttons{
-    position: fixed;
     width: 100%;
     bottom: 0;
 
@@ -410,6 +490,7 @@ body{
     }
   }
 }
+//----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
 .bg-light{
   background: $main-color;
