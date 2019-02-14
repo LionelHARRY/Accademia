@@ -102,6 +102,7 @@ $("#btn-send").click(function(){
   if((document.getElementById("idprenom").value !="") &&
      (document.getElementById("idnom").value !="") &&
      (document.getElementById("idage").value !="") &&
+     (document.getElementById("sexeFormControlSelect1").value !="") &&
      (document.getElementById("paysFormControlSelect1").value !="") &&
      (document.getElementById("idtel").value !="") &&
      (document.getElementById("idmail").value !="") &&

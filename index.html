@@ -186,12 +186,26 @@
                 </div>
 
                 <div class="form-row">
-                  <div class="col" id="age">
-                    <input type="number" id="idage" class="form-control" placeholder="Age" required="True" name="age">
+                  <div class="col">
+
+                    <div class="row">
+                      <div class="col-xs-6" id="age">
+                        <input type="number" id="idage" class="form-control" placeholder="Age" required="True" name="age">
+                      </div>
+
+                      <div class="col-xs-6" id="sexe">
+                        <select class="form-control" id="sexeFormControlSelect1" name="sexe">
+                          <option disabled selected>Sexe</option>
+                          <option value="M">M</option>
+                          <option value="F">F</option>
+                        </select>
+                      </div>
+                    </div>
+
                   </div>
 
+
                   <div class="col" id="nationalite">
-                    <!--<input type="text" class="form-control" placeholder="Nationalité" required="True">-->
                     <select class="form-control" id="paysFormControlSelect1" name="nationalite">
                       <option disabled selected>Nationalité</option>
                       <option value="Afghanistan">Afghanistan</option>
@@ -398,6 +412,7 @@
                       <option value="Zimbabwe">Zimbabwe</option>
                     </select>
                   </div>
+
                 </div>
                 <hr>
 

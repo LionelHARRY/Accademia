@@ -8250,7 +8250,8 @@ body {
       body .formulaire .container .form-group #nationalite, body .formulaire .container .form-group #adresse {
         padding-left: 10px; }
       body .formulaire .container .form-group #age input, body .formulaire .container .form-group #code-postal input {
-        width: 50%; }
+        width: 50%;
+        min-width: 66px; }
       body .formulaire .container .form-group #niveau {
         padding-right: 2px; }
       body .formulaire .container .form-group .form-check label {

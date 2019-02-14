@@ -9,6 +9,7 @@ if(isset($_POST['submit'])) {
     $prenom = $_POST['prenom'];
     $nom = $_POST['nom'];
     $age = $_POST['age'];
+    $sexe = $_POST['sexe'];
 	  $tel = $_POST['tel'];
   	$email = $_POST['email'];
   	$nationalite = $_POST['nationalite'];
@@ -25,6 +26,7 @@ if(isset($_POST['submit'])) {
     $email_message .= "PrĂ©nom: ".clean_string($prenom)."\n";
     $email_message .= "Nom: ".clean_string($nom)."\n";
     $email_message .= "Age: ".clean_string($age)."\n";
+    $email_message .= "Sexe: ".clean_string($sexe)."\n";
     $email_message .= "Telephone: ".clean_string($tel)."\n";
   	$email_message .= "nationalite: ".clean_string($nationalite)."\n";
 	  $email_message .= "niveau: ".clean_string($niveau)."\n";
