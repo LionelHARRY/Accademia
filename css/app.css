@@ -8341,10 +8341,10 @@ body {
       font-size: 17px;
       font-family: "impact mt shadow", "times new roman", times;
       cursor: default; }
-      @media (max-width: 387px) {
+      @media (max-width: 390px) {
         body .inscription #right-block .text, body .logement #right-block .text {
           font-size: 12px; } }
-      @media (min-width: 388px) and (max-width: 497px) {
+      @media (min-width: 391px) and (max-width: 497px) {
         body .inscription #right-block .text, body .logement #right-block .text {
           font-size: 13px; } }
       @media (min-width: 498px) and (max-width: 608px) {

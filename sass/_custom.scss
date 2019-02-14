@@ -340,11 +340,11 @@ body{
         font-family: $font-family;
         cursor: default;
 
-        @media(max-width: 387px){
+        @media(max-width: 390px){
           font-size: 12px;
         }
 
-        @media(min-width: 388px) and (max-width: 497px){
+        @media(min-width: 391px) and (max-width: 497px){
           font-size: 13px;
         }
 
