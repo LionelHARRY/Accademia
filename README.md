@@ -5,6 +5,4 @@ Accademia is a responsive website created with [Bootstrap](https://github.com/tw
 
 ![screenshot](../master/img/screenshot/screenshot.png)
 
-## Installation
 
-Every components have already been installed, the website is ready to be used.
